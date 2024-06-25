@@ -1,0 +1,44 @@
+# Allow Google
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing
+User-agent: Bingbot
+Allow: /
+
+# Allow DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Allow Yahoo
+User-agent: Slurp
+Allow: /
+
+# Allow Facebook
+User-agent: facebot
+Allow: /
+
+# Allow Twitter
+User-agent: Twitterbot
+Allow: /
+
+# Allow LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Allow Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Allow Apple
+User-agent: Applebot
+Allow: /
+
+# Allow Archive.org
+User-agent: ia_archiver
+Allow: /
+
+# Disallow all other user agents
+User-agent: *
+Disallow: /
+
