@@ -1,13 +1,36 @@
 body {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.banner {
+  font-size: 6em;
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px;
+  color: red; /* Ensure text color contrasts with black background */
   background-color: black;
+  font-family: "Bigelow Rules", sans-serif; /* Apply the "Luckiest Guy" font to the banner */
 }
 
-h1 {
+ /* unvisited link */
+a:link {
   color: red;
-  margin-left: 10%;
 }
 
-h2 {
-  color: white;
-  margin-left: 10%;
+/* visited link */
+a:visited {
+  color: red;
 }
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: orange;
+} 
+
