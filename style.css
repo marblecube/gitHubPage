@@ -2,6 +2,7 @@ body {
   background-color: white;
   color: black;
   text-align: center;
+  font-family: Arial, sans-serif; /* Fallback font family */
 }
 
 .banner {
@@ -11,26 +12,24 @@ body {
   padding: 5px 20px;
   color: red; /* Ensure text color contrasts with black background */
   background-color: black;
-  font-family: "Bigelow Rules", sans-serif; /* Apply the "Luckiest Guy" font to the banner */
+  font-family: "Bigelow Rules", sans-serif; /* Apply the "Bigelow Rules" font to the banner */
 }
 
- /* unvisited link */
-a:link {
-  color: red;
+h4, h5 {
+  font-size: 1.5em; /* Ensure consistent font size for h4 and h5 */
+  margin-top: 20px; /* Add margin to separate headings */
 }
 
-/* visited link */
-a:visited {
-  color: red;
+/* Hyperlink Styles */
+a:link, a:visited {
+  color: red; /* Set default and visited link color to red */
+  text-decoration: none; /* Remove underline from links */
 }
 
-/* mouse over link */
 a:hover {
-  color: yellow;
+  color: yellow; /* Change link color on hover to yellow */
 }
 
-/* selected link */
 a:active {
-  color: orange;
-} 
-
+  color: orange; /* Change link color when active to orange */
+}
