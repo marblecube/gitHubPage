@@ -15,11 +15,6 @@ body {
   font-family: "Bigelow Rules", sans-serif; /* Apply the "Bigelow Rules" font to the banner */
 }
 
-h4, h5 {
-  font-size: 1.5em; /* Ensure consistent font size for h4 and h5 */
-  margin-top: 20px; /* Add margin to separate headings */
-}
-
 /* Hyperlink Styles */
 a:link, a:visited {
   color: red; /* Set default and visited link color to red */
