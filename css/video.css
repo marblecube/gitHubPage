@@ -35,7 +35,12 @@ video {
   z-index: 2;
 }
 
-.video-wrapper h1,
+.video-wrapper h1 {
+  /* Ensuring the text is above the video */
+  z-index: 3;
+  position: relative;
+  color: red; /* Adjust the color as needed */
+}
 .video-wrapper p {
   /* Ensuring the text is above the video */
   z-index: 3;
