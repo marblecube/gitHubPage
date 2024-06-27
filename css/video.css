@@ -1,0 +1,44 @@
+video {
+  /** Simulating background-size: cover */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  /* Setting a lower z-index to ensure the video stays behind the text */
+  z-index: 1;
+}
+
+.video-wrapper {
+  /* Telling our absolute positioned video to 
+  be relative to this element */
+  position: relative;
+
+  width: 100%; /* Adjusted to cover the full width */
+  height: 100vh; /* Adjusted to cover the full height of the viewport */
+
+  /* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+
+  /* Centering the container's content vertically 
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Setting a higher z-index to ensure the text stays above the video */
+  z-index: 2;
+}
+
+.video-wrapper h1,
+.video-wrapper p {
+  /* Ensuring the text is above the video */
+  z-index: 3;
+  position: relative;
+  color: white; /* Adjust the color as needed */
+}
