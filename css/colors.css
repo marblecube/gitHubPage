@@ -1,0 +1,39 @@
+body {
+  color: black;
+}
+
+.landing-right a:link {
+  color: white;
+}
+
+/* visited link */
+.landing-right a:visited {
+  color: white;
+}
+
+/* mouse over link */
+.landing-right a:hover {
+  color: white;
+}
+
+/* selected link */
+.landing-right a:active {
+  color: orange;
+}
+
+/* Different background colors for each section for visual separation */
+.about {
+  background-color: #f8f8f8;
+}
+
+.projects {
+  background-color: #e8e8e8;
+}
+
+.portfolio {
+  background-color: #d8d8d8;
+}
+
+.socials {
+  background-color: #c8c8c8;
+}

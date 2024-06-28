@@ -12,10 +12,13 @@ body, html {
   overflow: hidden;
 }
 
+.landing-left {
+  float: left;
+}
+
 h1, p {
   margin: 0;
   padding: 0;
-  color: red;
 }
 
 h2 {
@@ -26,4 +29,11 @@ h2 {
 ul {
   padding: 0;
   margin: 0;
+}
+
+/* Ensure each section takes full width and has some padding */
+.about, .projects, .portfolio, .socials {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Includes padding in the element's total width and height */
 }

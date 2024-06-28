@@ -1,49 +1,88 @@
+/* Current styles in video.css */
 video {
-  /** Simulating background-size: cover */
   object-fit: cover;
   height: 100%;
   width: 100%;
-  
   position: absolute;
   top: 0;
   left: 0;
-  
-  /* Setting a lower z-index to ensure the video stays behind the text */
   z-index: 1;
 }
 
 .video-wrapper {
-  /* Telling our absolute positioned video to 
-  be relative to this element */
   position: relative;
-
-  width: 100%; /* Adjusted to cover the full width */
-  height: 100vh; /* Adjusted to cover the full height of the viewport */
-
-  /* Will not allow the video to overflow the 
-  container */
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
-
-  /* Centering the container's content vertically 
-  and horizontally */
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* Setting a higher z-index to ensure the text stays above the video */
   z-index: 2;
 }
 
-.video-wrapper h1 {
-  /* Ensuring the text is above the video */
+.video-wrapper h1, h2 {
   z-index: 3;
   position: relative;
-  color: red; /* Adjust the color as needed */
+  color: red;
 }
+
 .video-wrapper p {
-  /* Ensuring the text is above the video */
   z-index: 3;
   position: relative;
-  color: white; /* Adjust the color as needed */
+  color: white;
+}
+
+.video-wrapper ul {
+  z-index: 3;
+  position: relative;
+  color: red;
+}
+
+/* General styles for larger screens */
+.landing-left {
+  float: left;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.landing-left h1, .landing-left p {
+  margin: 0 10px; /* Adjust spacing between the elements */
+}
+
+.landing-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  width: 200px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .landing-left {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .landing-left h1, .landing-left p {
+    margin: 10px 0; /* Adjust spacing between the elements */
+  }
+
+  .landing-right {
+    position: static;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
