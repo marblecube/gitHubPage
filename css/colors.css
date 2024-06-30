@@ -26,14 +26,34 @@ body {
   background-color: #f8f8f8;
 }
 
+.about-inner{
+  background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
+}
+
 .projects {
   background-color: #e8e8e8;
+}
+
+.projects h4{
+  color: red;
+}
+
+.projects-inner{
+  background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
 }
 
 .portfolio {
   background-color: #d8d8d8;
 }
 
+.portfolio-inner{
+  background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
+}
+
 .socials {
   background-color: #c8c8c8;
+}
+
+.socials-inner{
+  background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
 }

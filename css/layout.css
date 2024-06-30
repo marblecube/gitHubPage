@@ -37,3 +37,113 @@ ul {
   padding: 20px;
   box-sizing: border-box; /* Includes padding in the element's total width and height */
 }
+
+.about-inner {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.about-inner p {
+  line-height: 1.6;
+}
+
+.projects-inner {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.projects-inner h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.projects-inner p {
+  margin-bottom: 15px;
+}
+
+.projects-inner .project {
+  margin-bottom: 20px;
+}
+
+.projects-inner .project h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.projects-inner .project p {
+  line-height: 1.4;
+}
+
+.portfolio-inner {
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.soapbox {
+  flex: 0 0 calc(50% - 20px); /* Adjust width for two columns with margin */
+  height: 200px; /* Set a fixed height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  border: 1px solid red; /* Add one-pixel border */
+}
+
+.soapbox a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.soapbox a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.soapbox-content {
+  padding: 10px; /* Add padding inside soapbox for content */
+}
+
+.socials {
+  text-align: center; /* Center align the content */
+}
+
+.socials-inner {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center; /* Center align horizontally */
+}
+
+.socials-inner ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.socials-inner li {
+  margin-bottom: 10px; /* Adjust spacing between list items */
+}
+
+.socials-inner a {
+  text-decoration: none;
+  color: #000; /* Adjust link color as needed */
+}
+
+.socials-inner a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
