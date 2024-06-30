@@ -117,6 +117,12 @@ ul {
   padding: 10px; /* Add padding inside soapbox for content */
 }
 
+@media (max-width: 768px) {
+  .soapbox {
+    flex: 0 0 calc(100% - 20px); /* Full width on smaller screens */
+    margin-bottom: 10px; /* Reduce margin bottom for closer stacking */
+  }
+
 .socials {
   text-align: center; /* Center align the content */
 }
