@@ -5,6 +5,18 @@ body, html {
   height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
 .landing {
   position: relative;
   width: 100%;
@@ -130,26 +142,21 @@ ul {
 .socials-inner {
   margin-top: 20px;
   padding: 20px;
-  border: 1px solid red;
   display: flex;
   justify-content: center; /* Center align horizontally */
 }
 
 .socials-inner ul {
-  list-style-type: none;
-  padding: 0;
+  padding: 20px;
+  display: flex; /* Use flexbox for list items */
+  justify-content: center; /* Center align list items horizontally */
+  /* flex-wrap: wrap; Allow items to wrap */
 }
 
 .socials-inner li {
   margin-bottom: 10px; /* Adjust spacing between list items */
+  margin-left: 10px; /* Adjust spacing between list items */
 }
 
-.socials-inner a {
-  text-decoration: none;
-  color: #000; /* Adjust link color as needed */
-}
 
-.socials-inner a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
 

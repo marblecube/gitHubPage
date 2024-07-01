@@ -1,3 +1,7 @@
+body, html {
+	font-family: Helvetica;
+}
+
 #bold {
 	font-weight:bold;
 }
@@ -8,4 +12,16 @@
 
 .projects h4{
 	font-style:italic;
+}
+
+.socials-inner ul {
+  list-style-type: none; /* Remove default list styles */
+}
+
+.socials-inner a {
+  text-decoration: none;
+}
+
+.socials-inner a:hover {
+  text-decoration: underline; /* Underline on hover */
 }

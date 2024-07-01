@@ -54,6 +54,20 @@ body {
   background-color: #c8c8c8;
 }
 
-.socials-inner{
+.socials-inner {
   background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
+  color: #fff; /* Set text color to white */
+  border: 1px solid red; /* Example border for visibility */
+}
+
+.socials-inner ul {
+  list-style-type: none; /* Remove default list styles */
+}
+
+.socials-inner a {
+  color: #000; /* Set link color to white */
+}
+
+.socials-inner a:hover {
+  color: #000;
 }
