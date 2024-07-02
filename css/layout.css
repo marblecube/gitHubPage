@@ -91,7 +91,7 @@ ul {
 .portfolio-inner {
   display: flex; /* Use flexbox for horizontal layout */
   flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: space-between; /* Distribute items evenly */
+  justify-content: space-evenly; /* Distribute items evenly */
 }
 
 .soapbox {
@@ -150,7 +150,7 @@ ul {
   padding: 20px;
   display: flex; /* Use flexbox for list items */
   justify-content: center; /* Center align list items horizontally */
-  /* flex-wrap: wrap; Allow items to wrap */
+  flex-wrap: wrap; /* Allow items to wrap */
 }
 
 .socials-inner li {
