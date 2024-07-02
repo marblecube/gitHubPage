@@ -1,5 +1,15 @@
+/* font colors go in colors.css */
+
 body, html {
 	font-family: Helvetica;
+}
+
+body a {
+  text-decoration: underline;
+}
+
+body a:hover {
+  text-decoration: none; /* Underline on hover */
 }
 
 #bold {
@@ -19,9 +29,9 @@ body, html {
 }
 
 .socials-inner a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .socials-inner a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: none; /* Underline on hover */
 }

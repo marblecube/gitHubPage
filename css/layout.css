@@ -105,7 +105,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   position: relative;
   border: 1px solid red; /* Add one-pixel border */
 }

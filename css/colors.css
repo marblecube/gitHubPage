@@ -2,6 +2,18 @@ body {
   color: black;
 }
 
+body a{
+  color:black;
+}
+
+body a:hover{
+  color:red;
+}
+
+body a:active{
+  color: orange;
+}
+
 .landing-right a:link {
   color: white;
 }
@@ -13,7 +25,7 @@ body {
 
 /* mouse over link */
 .landing-right a:hover {
-  color: white;
+  color: red;
 }
 
 /* selected link */
@@ -65,9 +77,13 @@ body {
 }
 
 .socials-inner a {
-  color: #000; /* Set link color to white */
+  color: #000;
 }
 
 .socials-inner a:hover {
-  color: #000;
+  color: red;
+}
+
+.socials-inner a:active {
+  color: orange;
 }
