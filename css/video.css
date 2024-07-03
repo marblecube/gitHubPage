@@ -1,25 +1,17 @@
 /* Current styles in video.css */
-video {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
 .video-wrapper {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow: clip;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
+
 
 .video-wrapper h1, h2 {
   z-index: 3;
@@ -44,11 +36,12 @@ video {
   float: left;
   margin: 20px;
   display: flex;
-  align-items: center;
 }
 
 .landing-left h1, .landing-left p {
   margin: 0 10px; /* Adjust spacing between the elements */
+  text-align: right;
+  vertical-align: bottom;
 }
 
 .landing-right {
@@ -59,7 +52,31 @@ video {
   padding: 10px;
   color: white;
   width: 200px;
+  text-align: right;
+  vertical-align: bottom;
 }
+
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+.landing-left h1, .landing-left p {
+    margin: 10px 0; /* Adjust spacing between the elements */
+  }
+
+.landing-right {
+    position: static;
+    margin: 10px auto;
+    width: 80%;
+  }
+
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -69,20 +86,3 @@ video {
     margin: 0 auto;
     flex-direction: column;
   }
-
-  .landing-left h1, .landing-left p {
-    margin: 10px 0; /* Adjust spacing between the elements */
-  }
-
-  .landing-right {
-    position: static;
-    margin: 10px auto;
-    width: 80%;
-  }
-
-  .video-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
