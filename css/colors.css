@@ -58,10 +58,6 @@ body a:active{
   background-color: #d8d8d8;
 }
 
-.portfolio-inner{
-  background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
-}
-
 .socials {
   background-color: #c8c8c8;
 }

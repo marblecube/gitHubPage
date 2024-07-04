@@ -13,17 +13,6 @@ body, html {
   z-index: 1;
 }
 
-/*
-.landing-left {
-  float: left;
-  z-index: 1;
-}
-
-.main {
-  z-index: 10;
-}
-*/
-
 /* Used for accesibility; a variation of traditional alt text */
 .visually-hidden {
   position: absolute;
@@ -140,12 +129,6 @@ ul {
   padding: 10px; /* Add padding inside soapbox for content */
 }
 
-@media (max-width: 768px) {
-  .soapbox {
-    flex: 0 0 calc(100% - 20px); /* Full width on smaller screens */
-    margin-bottom: 10px; /* Reduce margin bottom for closer stacking */
-  }
-
 .socials {
   text-align: center; /* Center align the content */
 }
@@ -169,5 +152,8 @@ ul {
   margin-left: 10px; /* Adjust spacing between list items */
 }
 
-
-
+@media (max-width: 768px) {
+  .soapbox {
+    flex: 0 0 calc(100% - 20px); /* Full width on smaller screens */
+    margin-bottom: 10px; /* Reduce margin bottom for closer stacking */
+}
