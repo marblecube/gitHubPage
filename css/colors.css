@@ -1,5 +1,10 @@
 body {
   color: black;
+  background-color: #ae5d5d;
+}
+
+h4{
+  color: red;
 }
 
 body a{
@@ -35,7 +40,7 @@ body a:active{
 
 /* Different background colors for each section for visual separation */
 .about {
-  background-color: #f8f8f8;
+  background-color: #e9bdbd;
 }
 
 .about-inner{
@@ -43,11 +48,7 @@ body a:active{
 }
 
 .projects {
-  background-color: #e8e8e8;
-}
-
-.projects h4{
-  color: red;
+  background-color: #dd9c9c;
 }
 
 .projects-inner{
@@ -55,21 +56,21 @@ body a:active{
 }
 
 .portfolio {
-  background-color: #d8d8d8;
+  background-color: #cd7575;
 }
 
 .socials {
-  background-color: #c8c8c8;
+  background-color: #ae5d5d;
 }
 
 .socials-inner {
-  background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
-  color: #fff; /* Set text color to white */
-  border: 1px solid red; /* Example border for visibility */
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border: 1px solid red;
 }
 
 .socials-inner ul {
-  list-style-type: none; /* Remove default list styles */
+  list-style-type: none;
 }
 
 .socials-inner a {
@@ -82,4 +83,8 @@ body a:active{
 
 .socials-inner a:active {
   color: orange;
+}
+
+.footer{
+  background-color: #ae5d5d;
 }

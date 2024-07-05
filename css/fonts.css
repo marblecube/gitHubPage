@@ -12,13 +12,10 @@ body a:hover {
   text-decoration: none; /* Underline on hover */
 }
 
-#bold {
+.bold {
 	font-weight:bold;
 }
 
-.landing {
-	font-family: Helvetica;
-}
 
 .projects h4{
 	font-style:italic;
