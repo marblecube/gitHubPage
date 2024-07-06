@@ -1,6 +1,6 @@
 body {
   color: black;
-  background-color: #ae5d5d;
+  background-color: #dd9c9c;
 }
 
 h4{
@@ -55,12 +55,18 @@ body a:active{
   background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
 }
 
+.projects-inner .project img {
+  border: 2px solid red;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .portfolio {
-  background-color: #cd7575;
+  background-color: #e9bdbd;
 }
 
 .socials {
-  background-color: #ae5d5d;
+  background-color: #dd9c9c;
 }
 
 .socials-inner {
@@ -86,5 +92,5 @@ body a:active{
 }
 
 .footer{
-  background-color: #ae5d5d;
+  background-color: #dd9c9c;
 }

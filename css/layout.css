@@ -137,8 +137,33 @@ video {
   margin-bottom: 10px;
 }
 
+.projects-inner .project-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.projects-inner .project img {
+  display: block;
+  margin: 0 0 10px 0;
+  margin-right: 20px;
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .projects-inner .project p {
+  width: 60%;
   line-height: 1.4;
+  margin-left: 20px;
+  /*width: 80%;
+  line-height: 1.4;
+  margin: 0;
+  text-align: center;*/
 }
 
 .portfolio-inner {
@@ -234,6 +259,21 @@ video {
     text-align: center;
     margin: 0 auto;
     flex-direction: column;
+  }
+
+    .projects-inner .project-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .projects-inner .project img {
+    width: 40%;
+    margin: 0 20px 0 0;
+  }
+
+  .projects-inner .project p {
+    width: 60%;
+    margin: 0;
   }
 
   .soapbox {

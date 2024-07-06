@@ -4,6 +4,10 @@ body, html {
 	font-family: Helvetica;
 }
 
+h4{
+	font-style:italic;
+}
+
 body a {
   text-decoration: underline;
 }
@@ -16,10 +20,6 @@ body a:hover {
 	font-weight:bold;
 }
 
-
-.projects h4{
-	font-style:italic;
-}
 
 .socials-inner ul {
   list-style-type: none; /* Remove default list styles */
