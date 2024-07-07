@@ -1,78 +1,71 @@
 body {
-  color: black;
-  background-color: #dd9c9c;
+  color: var(--font-color);
+  background-color: var(--main-bg-color);
 }
 
-h4{
-  color: red;
+h4 {
+  color: var(--primary-color);
 }
 
-body a{
-  color:black;
+body a {
+  color: var(--font-color);
 }
 
-body a:hover{
-  color:red;
+body a:hover {
+  color: var(--primary-color);
 }
 
-body a:active{
+body a:active {
   color: orange;
 }
 
-.landing-right a:link {
-  color: white;
-}
-
-/* visited link */
+.landing-right a:link,
 .landing-right a:visited {
   color: white;
 }
 
-/* mouse over link */
 .landing-right a:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
-/* selected link */
 .landing-right a:active {
   color: orange;
 }
 
-/* Different background colors for each section for visual separation */
 .about {
-  background-color: #e9bdbd;
+  background-color: var(--secondary-color);
 }
 
-.about-inner{
-  background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
+.about-inner {
+  background-color: var(--opacity);
 }
 
 .projects {
-  background-color: #dd9c9c;
+  background-color: var(--main-bg-color);
 }
 
-.projects-inner{
-  background-color: rgba(0, 0, 0, 0.1); /* Black with 80% opacity */
+.projects-inner {
+  background-color: var(--opacity);
 }
 
 .projects-inner .project img {
   border: 2px solid red;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--opacity);
 }
 
 .portfolio {
-  background-color: #e9bdbd;
+  background-color: var(--secondary-color);
 }
 
 .socials {
-  background-color: #dd9c9c;
+  background-color: var(--main-bg-color);
 }
 
 .socials-inner {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--opacity);
   color: #fff;
-  border: 1px solid red;
+  border: 1px solid var(--primary-color);
 }
 
 .socials-inner ul {
@@ -84,13 +77,13 @@ body a:active{
 }
 
 .socials-inner a:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 .socials-inner a:active {
   color: orange;
 }
 
-.footer{
-  background-color: #dd9c9c;
+.footer {
+  background-color: var(--main-bg-color);
 }

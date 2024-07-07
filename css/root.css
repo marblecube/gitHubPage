@@ -1,0 +1,16 @@
+:root {
+
+  /*COLORS*/
+  --main-bg-color: #dd9c9c;
+  --primary-color: red;
+  --secondary-color: #e9bdbd;
+  --tertiary-color: #ffff00;
+
+  /*FONTS*/
+  --font-color: #000;
+  --banner-font-family: Helvetica;
+
+  /*OPACITIES*/
+  --opacity: rgba(0, 0, 0, 0.1);
+ 
+}
