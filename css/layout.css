@@ -36,7 +36,7 @@ ul {
 .video-wrapper h1, h2 {
   z-index: 3;
   position: relative;
-  color: red;
+  color: var(--primary-color);
 }
 
 .video-wrapper p {
@@ -48,7 +48,7 @@ ul {
 .video-wrapper ul {
   z-index: 3;
   position: relative;
-  color: red;
+  color: var(--primary-color);
 }
 
 video {
@@ -106,7 +106,7 @@ video {
 .about-inner {
   margin-top: 20px;
   padding: 20px;
-  border: 1px solid red;
+  border: 1px solid var(--primary-color);
 }
 
 .about-inner p {
@@ -151,9 +151,8 @@ video {
   max-width: 300px;
   height: auto;
   object-fit: cover;
-  border: 2px solid black;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--opacity);
 }
 
 .projects-inner .project p {
