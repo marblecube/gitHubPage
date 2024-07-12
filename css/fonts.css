@@ -43,6 +43,10 @@ body a:hover {
   border: 0;
 }
 
+.about-inner a {
+  font-size: 0.9rem; /* Example: Make link text smaller */
+}
+
 .socials-inner a:hover {
   text-decoration: none; /* Underline on hover */
 }
