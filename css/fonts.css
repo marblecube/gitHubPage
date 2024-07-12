@@ -28,6 +28,20 @@ body a:hover {
 .socials-inner a {
   text-decoration: underline;
 }
+/* fonts.css */
+
+
+/* Used for accesibility; a variation of traditional alt text */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 .socials-inner a:hover {
   text-decoration: none; /* Underline on hover */
