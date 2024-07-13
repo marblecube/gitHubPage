@@ -13,4 +13,3 @@ document.getElementById("email").textContent = email;
 
 // Optionally, set the email address as a clickable mailto link
 document.getElementById("email").href = "mailto:" + email;
-document.getElementById("email").textContent = email;
