@@ -269,4 +269,9 @@ video {
     flex: 0 0 calc(100% - 20px); /* Full width on smaller screens */
     margin-bottom: 10px; /* Reduce margin bottom for closer stacking */
   }
+
+  .iframe {
+      display: block;
+      margin: 0 auto;
+  }
 }
