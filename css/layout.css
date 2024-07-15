@@ -6,7 +6,6 @@ body, html {
 }
 
 h1, p {
-  margin: 0;
   padding: 0;
 }
 
@@ -95,16 +94,18 @@ video {
 }
 
 /* Ensure each section takes full width and has some padding */
-.about, .projects, .portfolio, .socials {
+.about, .projects, .portfolio, .socials, .videos {
   width: 100%;
   padding: 20px;
   box-sizing: border-box; /* Includes padding in the element's total width and height */
   clear: both;
 }
 
-
-.about-inner {
-  margin-top: 20px;
+.about-inner, .videos-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0px;
   padding: 20px;
   border: 1px solid var(--primary-color);
 }
@@ -116,7 +117,7 @@ video {
 .projects-inner {
   margin-top: 20px;
   padding: 20px;
-  border: 1px solid red;
+  border: 1px solid var(--primary-color);
 }
 
 .projects-inner h3 {
@@ -230,12 +231,41 @@ video {
   margin-left: 10px; /* Adjust spacing between list items */
 }
 
+.videos{
+  margin: auto;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+}
+
+.videos-inner {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Arranges items vertically */
+  justify-content: center; /* Centers items vertically */
+  margin-top: 20px; /* Adjust as needed */
+  padding: 20px; /* Adjust padding as needed */
+  border: 1px solid var(--primary-color); /* Example border style */
+}
+
+.videos-inner h3,
+.videos-inner h4,
+.videos-inner p {
+  margin-top: 10px; /* Adjust the top margin as needed */
+  margin-bottom: 10px; /* Adjust the bottom margin as needed */
+}
+
+.youtube-videos {
+  align-items: center;
+}
+
+.iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 .footer {
   text-align: right;
   padding-bottom: 1%;
 }
-
-/* layout.css */
 
 .footer p {
   margin-right: 1%;
@@ -266,12 +296,17 @@ video {
   }
 
   .soapbox {
-    flex: 0 0 calc(100% - 20px); /* Full width on smaller screens */
-    margin-bottom: 10px; /* Reduce margin bottom for closer stacking */
+    flex: 0 0 calc(100% - 20px);
+    margin-bottom: 10px;
+  }
+
+  .videos-inner {
+    margin-top: 10px; /* Adjusted margin for smaller screens */
+    padding: 10px; /* Adjusted padding for smaller screens */
   }
 
   .iframe {
-      display: block;
-      margin: 0 auto;
+    width: 100%;
+    height: auto;
   }
 }
