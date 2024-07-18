@@ -253,13 +253,24 @@ video {
   margin-bottom: 10px; /* Adjust the bottom margin as needed */
 }
 
+/* General styles for .youtube-videos */
 .youtube-videos {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 10px; /* Adjust margin as needed */
 }
 
+/* Specific styles for .iframe within .youtube-videos */
+.youtube-videos .iframe {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  width: 100%; /* Ensures iframe fills its container */
+}
+
+/* Additional styles for .iframe (if necessary) */
 .iframe {
-    display: block;
-    margin: 0 auto;
+  margin: 0 auto; /* Center align .iframe within its container */
 }
 
 .footer {
@@ -269,6 +280,13 @@ video {
 
 .footer p {
   margin-right: 1%;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .youtube-videos {
+    padding: 10px;
+  }
 }
 
 /* Media query for smaller screens */

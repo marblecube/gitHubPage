@@ -84,6 +84,15 @@ body a:active {
   color: orange;
 }
 
+.videos-inner{
+  background-color: var(--opacity);
+}
+
+.youtube-videos{
+  border:  1px solid var(--primary-color);
+  box-shadow: 0 4px 8px var(--opacity);
+}
+
 .footer {
   background-color: var(--main-bg-color);
 }
