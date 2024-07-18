@@ -234,7 +234,6 @@ video {
 .videos{
   margin: auto;
   padding: 20px;
-  border: 1px solid var(--primary-color);
 }
 
 .videos-inner {
