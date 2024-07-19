@@ -8,8 +8,8 @@ var tld = "co";
 // Construct the email address
 var email = username + "@" + domain + "." + tld;
 
-// Find the element with the ID "email" and set its text content
-document.getElementById("email").textContent = email;
+// Find the element with the ID "email" and set its text content and href attribute
+var emailElement = document.getElementById("email");
+emailElement.textContent = email;
+emailElement.href = "mailto:" + email;
 
-// Optionally, set the email address as a clickable mailto link
-document.getElementById("email").href = "mailto:" + email;
