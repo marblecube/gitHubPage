@@ -166,6 +166,12 @@ video {
   text-align: center;*/
 }
 
+.projects-inner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .portfolio-inner {
   display: flex; /* Use flexbox for horizontal layout */
   flex-wrap: wrap; /* Allow items to wrap to the next line */
@@ -297,19 +303,32 @@ video {
     flex-direction: column;
   }
 
-    .projects-inner .project-content {
+  .projects-inner .project {
+    overflow: hidden; /* Ensure the container clears floats */
+    margin-bottom: 20px; /* Space between projects */
+    width: auto; /* Override width to auto to ensure proper wrapping */
+  }
+
+  .projects-inner .project-content {
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .projects-inner .project img {
-    width: 40%;
-    margin: 0 20px 0 0;
+    float: left; /* Float the image to the left */
+    width: 40%; /* Adjust width as needed */
+    max-width: 150px; /* Limit maximum width */
+    margin-right: 1em; /* Space between image and text */
+    margin-bottom: 1em; /* Space below the image */
+    border-radius: 8px; /* Optional: styling for rounded corners */
   }
 
   .projects-inner .project p {
-    width: 60%;
-    margin: 0;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: calc(60% - 1em); /* Adjust width to account for margin */
+    /* Ensure the paragraph wraps around the floated image */
   }
 
   .soapbox {
