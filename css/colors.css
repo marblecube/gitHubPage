@@ -84,12 +84,7 @@ body a:active {
   color: orange;
 }
 
-.ai-art{
-  border:  1px solid var(--primary-color);
-  background-color: var(--opacity);
-}
-
-.videos-inner{
+.videos-inner, .ai-art-inner, .writing-inner {
   background-color: var(--opacity);
 }
 

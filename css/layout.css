@@ -237,16 +237,6 @@ video {
   margin-left: 10px; /* Adjust spacing between list items */
 }
 
-.ai-art{
-  margin: 10px;
-}
-
-.ai-art-inner {
-  display: block;
-  border-radius: 8px;
-  margin: 10px;
-}
-
 .image-wrapper {
   text-align: center; /* Center images within the wrapper */
 }
@@ -263,12 +253,12 @@ video {
 }
 
 
-.videos{
+.videos, .ai-art, .writing {
   margin: auto;
   padding: 20px;
 }
 
-.videos-inner {
+.videos-inner, .ai-art-inner, .writing-inner {
   display: flex; /* Enables flexbox layout */
   flex-direction: column; /* Arranges items vertically */
   justify-content: center; /* Centers items vertically */
@@ -277,9 +267,9 @@ video {
   border: 1px solid var(--primary-color); /* Example border style */
 }
 
-.videos-inner h3,
-.videos-inner h4,
-.videos-inner p {
+.videos-inner, .ai-art-inner, .writing-inner h3,
+.videos-inner, .ai-art-inner, .writing-inner h4,
+.videos-inner, .ai-art-inner, .writing-inner p {
   margin-top: 10px; /* Adjust the top margin as needed */
   margin-bottom: 10px; /* Adjust the bottom margin as needed */
 }
