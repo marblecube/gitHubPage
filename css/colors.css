@@ -88,6 +88,11 @@ body a:active {
   background-color: var(--opacity);
 }
 
+.image-wrapper img {
+  box-shadow: 0 4px 8px var(--opacity);
+  border: 1px solid var(--primary-color);
+}
+
 .youtube-videos{
   border:  1px solid var(--primary-color);
   box-shadow: 0 4px 8px var(--opacity);

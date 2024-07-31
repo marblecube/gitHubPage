@@ -192,7 +192,7 @@ video {
   margin-top: 10px;
   margin-bottom: 10px;
   position: relative;
-  border: 1px solid red;
+  border: 1px solid var(--primary-color);
 }
 
 .soapbox a {
@@ -249,7 +249,6 @@ video {
   max-width: 500px;
   height: auto;
   object-fit: cover;
-  box-shadow: 0 4px 8px var(--opacity);
 }
 
 

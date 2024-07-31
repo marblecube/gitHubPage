@@ -20,6 +20,10 @@ body a:hover {
 	font-weight:bold;
 }
 
+.italic{
+  font-style: italic;
+}
+
 
 .socials-inner ul {
   list-style-type: none; /* Remove default list styles */
