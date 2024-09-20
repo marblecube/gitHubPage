@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.link-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#align_element_right {
+  text-align: right;
+}
+
 body, html {
   margin: 0;
   padding: 0;
