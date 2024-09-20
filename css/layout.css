@@ -2,13 +2,13 @@
   text-align: center;
 }
 
+#align_element_right {
+  text-align: right;
+}
+
 .link-container {
     display: flex;
     justify-content: space-between;
-}
-
-#align_element_right {
-  text-align: right;
 }
 
 body, html {
