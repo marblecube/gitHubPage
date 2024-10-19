@@ -20,6 +20,7 @@ body, html {
 
 h1, p {
   padding: 0;
+  margin: 1em 1em;
 }
 
 h2 {
@@ -30,6 +31,15 @@ h2 {
 ul {
   padding: 0;
   margin: 0;
+}
+
+blockquote {
+  padding: 25px;
+}
+
+
+.image-caption {
+  font-style: italic;
 }
 
 .video-wrapper {
@@ -107,11 +117,14 @@ video {
 }
 
 /* Ensure each section takes full width and has some padding */
-.about, .projects, .portfolio, .socials, .videos {
-  width: 100%;
+.about, .projects, .portfolio, .socials, .videos, .writing{
+  width: auto;
   padding: 20px;
+  margin: 50px 50px;
   box-sizing: border-box; /* Includes padding in the element's total width and height */
   clear: both;
+  border: 1px solid var(--primary-color);
+  /* background color: var(--tertiary-color: #ffff00); */
 }
 
 .about-inner, .videos-inner {
@@ -252,6 +265,7 @@ video {
 
 .image-wrapper {
   text-align: center; /* Center images within the wrapper */
+  padding: 20px;
 }
 
 .image-wrapper img {

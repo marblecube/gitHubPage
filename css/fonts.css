@@ -2,10 +2,45 @@
 
 body, html {
 	font-family: Helvetica;
+  font-size: 100%;
 }
 
-h4{
-	font-style:italic;
+.bold {
+  font-weight:bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.italic-and-bold p {
+  font-style: italic;
+  font-weight:bold;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+h3 {
+  font-size: 1.40625em; /* approximately 22.5px/16=1.40625em */
+}
+
+h4 {
+  font-size: 1.0546875em; /* approximately 17px/16=1.0546875em */
+  font-style:italic;
+}
+
+p {
+  font-size: 0.875em;
+}
+
+blockquote {
+  font-style: italic;
 }
 
 body a {
@@ -15,15 +50,6 @@ body a {
 body a:hover {
   text-decoration: none; /* Underline on hover */
 }
-
-.bold {
-	font-weight:bold;
-}
-
-.italic{
-  font-style: italic;
-}
-
 
 .socials-inner ul {
   list-style-type: none; /* Remove default list styles */
