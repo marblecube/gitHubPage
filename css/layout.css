@@ -120,7 +120,7 @@ video {
 .about, .projects, .portfolio, .socials, .videos, .writing{
   width: auto;
   padding: 20px;
-  margin: 50px 50px;
+  margin: 25px 25px;
   box-sizing: border-box; /* Includes padding in the element's total width and height */
   clear: both;
   border: 1px solid var(--primary-color);
@@ -185,7 +185,7 @@ video {
 
 
 .projects-inner .project-content .text-wrapper p {
-  display: inline-block;
+  display: inline;
 }
 
 
@@ -215,10 +215,10 @@ video {
 */
 
 .projects-inner .project p {
-  width: 60%;
+  width: 90%;
   line-height: 1.4;
   margin-left: 20px;
-  text-align: center;
+  text-align: justify;
   /*width: 80%;
   line-height: 1.4;
   margin: 0;
@@ -402,7 +402,6 @@ video {
 
 @media (max-width: 400px) {
   #email {
-    font-size: 10px; /* Reduce font size */
     display: block; /* Ensure the email breaks into a new line if needed */
     word-break: break-word; /* Allows breaking within words for better fit */
   }

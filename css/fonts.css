@@ -51,6 +51,14 @@ body a:hover {
   text-decoration: none; /* Underline on hover */
 }
 
+.about-inner p {
+  font-size: 1.2em;
+} 
+
+.projects-inner .project-content .text-wrapper p {
+  font-size: 1.2em;
+}
+
 .socials-inner ul {
   list-style-type: none; /* Remove default list styles */
 }
@@ -76,3 +84,9 @@ body a:hover {
 .socials-inner a:hover {
   text-decoration: none; /* Underline on hover */
 }
+
+
+#email {
+    font-size: 1em !important; /* !important should be here */
+}
+
