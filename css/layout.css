@@ -140,6 +140,12 @@ video {
   line-height: 1.6;
 }
 
+#email {
+  /* Add your desired styles here */
+  overflow-wrap: break-word; /* Or word-break: break-all; */
+  font-size: 12px; /* Adjust font size if needed */
+}
+
 .projects-inner {
   margin-top: 20px;
   padding: 20px;
@@ -166,26 +172,53 @@ video {
 
 .projects-inner .project-content {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
+  align-items: flex-start;
+  gap: 10px; /* Adjust spacing as needed */
+  justify-content: center;
 }
 
+.projects-inner .project-content .text-wrapper{
+  text-align: center;
+}
+
+
+.projects-inner .project-content .text-wrapper p {
+  display: inline-block;
+}
+
+
+.projects-inner .project .image-wrapper {
+  display: block;
+}
+
+.projects-inner .project .image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/*
 .projects-inner .project img {
   display: block;
   margin: 0 0 10px 0;
   margin-right: 20px;
-  width: 80%;
+  width: 150px;
   max-width: 300px;
-  height: auto;
-  object-fit: cover;
+  height: 150px;
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 8px var(--opacity);
 }
+*/
 
 .projects-inner .project p {
   width: 60%;
   line-height: 1.4;
   margin-left: 20px;
+  text-align: center;
   /*width: 80%;
   line-height: 1.4;
   margin: 0;
@@ -335,9 +368,46 @@ video {
   .youtube-videos {
     padding: 10px;
   }
+
+  .projects-inner .project-content {
+    display: flex;
+    flex-direction: row; /* Arrange horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    gap: 10px; /* Adjust spacing as needed */
+  }
+
+  .projects-inner .project-content .image-wrapper {
+    display: block;
+    width: 50%; /* Adjust width as needed */
+  }
+
+  .projects-inner .project-content .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid var(--primary-color); /* Apply border to image */
+    box-shadow: 0 4px 8px var(--opacity); /* Apply box shadow to image */
+  }
+
+  .projects-inner .project-content .text-wrapper {
+    width: 50%; /* Adjust width as needed */
+    text-align: center; /* Center text within text-wrapper */
+    justify-content: center;
+  }
 }
 
 /* Media query for smaller screens */
+
+@media (max-width: 400px) {
+  #email {
+    font-size: 10px; /* Reduce font size */
+    display: block; /* Ensure the email breaks into a new line if needed */
+    word-break: break-word; /* Allows breaking within words for better fit */
+  }
+}
+
 @media (max-width: 768px) {
   .landing-left {
     float: none;
@@ -354,25 +424,38 @@ video {
 
   .projects-inner .project-content {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    flex-direction: column; /* Arrange horizontally */
+    align-items: center;
   }
 
-  .projects-inner .project img {
-    float: left; /* Float the image to the left */
-    width: 40%; /* Adjust width as needed */
-    max-width: 150px; /* Limit maximum width */
+  .projects-inner .project .image-wrapper {
+    width: 80%; /* Adjust width as needed */
+    max-width: 200px; /* Limit maximum width */
     margin-right: 1em; /* Space between image and text */
     margin-bottom: 1em; /* Space below the image */
+  }
+
+  .projects-inner .project .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid var(--primary-color); /* Apply border to image */
+    box-shadow: 0 4px 8px var(--opacity); /* Apply box shadow to image */
     border-radius: 8px; /* Optional: styling for rounded corners */
+  }
+
+  .projects-inner .project .text-wrapper {
+    /*width: calc(60% - 1em);  Adjust width to account for margin */
+    text-align: center;
   }
 
   .projects-inner .project p {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    width: calc(60% - 1em); /* Adjust width to account for margin */
     /* Ensure the paragraph wraps around the floated image */
   }
+}
 
   .soapbox {
     flex: 0 0 calc(100% - 20px);
