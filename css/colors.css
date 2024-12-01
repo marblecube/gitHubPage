@@ -84,8 +84,12 @@ body a:active {
   color: orange;
 }
 
-.videos-inner, .ai-art-inner, .writing-inner {
+.videos-inner, .ai-art-inner, .writing-inner, .aboutpage-inner{
   background-color: var(--opacity);
+}
+
+.aboutpage-inner h3{
+  color: var(--primary-color);
 }
 
 .image-wrapper img {

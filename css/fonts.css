@@ -51,9 +51,13 @@ body a:hover {
   text-decoration: none; /* Underline on hover */
 }
 
-.about-inner p {
+.about-inner, .aboutpage-inner p {
   font-size: 1.2em;
-} 
+}
+
+.aboutpage-inner ul{
+  font-size: 1.2em;
+}
 
 .projects-inner .project-content .text-wrapper p {
   font-size: 1.2em;

@@ -117,7 +117,7 @@ video {
 }
 
 /* Ensure each section takes full width and has some padding */
-.about, .projects, .portfolio, .socials, .videos, .writing{
+.about, .projects, .portfolio, .socials, .videos, .writing, .aboutpage{
   width: auto;
   padding: 20px;
   margin: 25px 25px;
@@ -127,7 +127,7 @@ video {
   /* background color: var(--tertiary-color: #ffff00); */
 }
 
-.about-inner, .videos-inner {
+.about-inner, .videos-inner, .aboutpage-inner{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,14 +136,23 @@ video {
   border: 1px solid var(--primary-color);
 }
 
-.about-inner p {
+.about-inner, .aboutpage-inner{
+  line-height: 1.6;
+}
+
+.aboutpage-inner ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px,;
+  padding: 40px;
+  border: 1px solid var(--primary-color);
   line-height: 1.6;
 }
 
 #email {
-  /* Add your desired styles here */
   overflow-wrap: break-word; /* Or word-break: break-all; */
-  font-size: 12px; /* Adjust font size if needed */
+  font-size: 12px;
 }
 
 .projects-inner {
