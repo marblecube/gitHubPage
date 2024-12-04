@@ -34,7 +34,12 @@ ul {
 }
 
 blockquote {
-  padding: 25px;
+  color: var(--font-color);
+  background-color: rgba(221, 156, 156, 1);
+  font-stretch: italic;
+  font-weight: bold;
+  padding: 50px 30px;
+  margin: 5%;
 }
 
 
@@ -200,6 +205,7 @@ video {
 
 .projects-inner .project .image-wrapper {
   display: block;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1.00)) !important;
 }
 
 .projects-inner .project .image-wrapper img {
@@ -207,21 +213,19 @@ video {
   width: 80%;
   height: auto;
   object-fit: contain;
-}
-
-/*
-.projects-inner .project img {
-  display: block;
-  margin: 0 0 10px 0;
-  margin-right: 20px;
-  width: 150px;
-  max-width: 300px;
-  height: 150px;
-  object-fit: contain;
+  filter: drop-shadow(0 4px 4px var(--box-shadow-opacity));
   border-radius: 8px;
-  box-shadow: 0 4px 8px var(--opacity);
-}
-*/
+  border: 5px solid var(--primary-color);
+  }
+
+.image-wrapper img {
+  display: block;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1.00));
+  border-radius: 8px;
+  }
 
 .projects-inner .project p {
   width: 90%;
@@ -310,17 +314,6 @@ video {
   padding: 20px;
 }
 
-.image-wrapper img {
-  display: inline-block; /* Allows the images to be centered */
-  margin: 0 0 10px 0; /* Bottom margin for spacing */
-  margin-right: 20px; /* Right margin for spacing between images */
-  width: 80%;
-  max-width: 500px;
-  height: auto;
-  object-fit: cover;
-}
-
-
 .videos, .ai-art, .writing {
   margin: auto;
   padding: 20px;
@@ -378,34 +371,43 @@ video {
     padding: 10px;
   }
 
-  .projects-inner .project-content {
-    display: flex;
-    flex-direction: row; /* Arrange horizontally */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    gap: 10px; /* Adjust spacing as needed */
-  }
-
-  .projects-inner .project-content .image-wrapper {
-    display: block;
-    width: 50%; /* Adjust width as needed */
-  }
-
-  .projects-inner .project-content .image-wrapper img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border: 2px solid var(--primary-color); /* Apply border to image */
-    box-shadow: 0 4px 8px var(--opacity); /* Apply box shadow to image */
-  }
-
-  .projects-inner .project-content .text-wrapper {
-    width: 50%; /* Adjust width as needed */
-    text-align: center; /* Center text within text-wrapper */
-    justify-content: center;
-  }
+.projects-inner .project-content {
+  display: flex;
+  flex-direction: row; /* Arrange horizontally */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  gap: 10px; /* Adjust spacing as needed */
 }
+.projects-inner .project-content .image-wrapper {
+display: block;
+width: 50%; /* Adjust width as needed */}
+
+.projects-inner .project-content .image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 2px solid var(--primary-color); /* Apply border to image */
+  box-shadow: 0 4px 8px var(--opacity); /* Apply box shadow to image */
+  border-radius: 8px;
+}
+
+.image-wrapper img {
+  display: inline-block; /* Allows the images to be centered */
+  margin: 0 0 10px 0; /* Bottom margin for spacing */
+  margin-right: 20px; /* Right margin for spacing between images */
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.projects-inner .project-content .text-wrapper {
+  width: 50%; /* Adjust width as needed */
+  text-align: center; /* Center text within text-wrapper */
+  justify-content: center;
+}
+
 
 /* Media query for smaller screens */
 
@@ -441,16 +443,6 @@ video {
     max-width: 200px; /* Limit maximum width */
     margin-right: 1em; /* Space between image and text */
     margin-bottom: 1em; /* Space below the image */
-  }
-
-  .projects-inner .project .image-wrapper img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border: 2px solid var(--primary-color); /* Apply border to image */
-    box-shadow: 0 4px 8px var(--opacity); /* Apply box shadow to image */
-    border-radius: 8px; /* Optional: styling for rounded corners */
   }
 
   .projects-inner .project .text-wrapper {
