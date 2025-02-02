@@ -132,12 +132,12 @@ video {
   /* background color: var(--tertiary-color: #ffff00); */
 }
 
-.about-inner, .videos-inner, .aboutpage-inner{
+.about-inner, .videos-inner, .aboutpage-inner, .writing-inner{
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 0px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid var(--primary-color);
 }
 
@@ -154,6 +154,13 @@ video {
   border: 1px solid var(--primary-color);
   line-height: 1.6;
 }
+
+.about-inner, .aboutpage-inner, .writing-inner p{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
 
 #email {
   overflow-wrap: break-word; /* Or word-break: break-all; */
