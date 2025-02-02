@@ -136,8 +136,8 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 0px;
-  padding: 10px;
+  margin-top: 20px;
+  padding: 20px; 
   border: 1px solid var(--primary-color);
 }
 
@@ -155,11 +155,11 @@ video {
   line-height: 1.6;
 }
 
-.about-inner, .aboutpage-inner, .writing-inner p{
+/*.about-inner, .aboutpage-inner, .writing-inner p{
   width: 100%;
   box-sizing: border-box;
   margin: 0px;
-}
+}*/
 
 
 #email {
