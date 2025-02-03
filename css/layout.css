@@ -167,6 +167,7 @@ video {
 -------------------------------------------------------------------------- */
 
 .about-inner,
+.projects-inner,
 .videos-inner,
 .aboutpage-inner,
 .writing-inner {
@@ -176,11 +177,7 @@ video {
   margin-top: 20px;
   padding: 20px;
   border: 1px solid var(--primary-color);
-}
-
-.about-inner,
-.aboutpage-inner {
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .aboutpage-inner ul {
@@ -205,12 +202,6 @@ video {
 /* ==========================================================================
    Projects Section
    ========================================================================== */
-
-.projects-inner {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid var(--primary-color);
-}
 
 .projects-inner h3 {
   font-size: 1.5rem;
