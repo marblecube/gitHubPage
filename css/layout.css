@@ -1,3 +1,37 @@
+/* layout.css */
+
+/* ==========================================================================
+   Global Resets & Base Styles
+   ========================================================================== */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+p {
+  margin: 1em;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
 #center_element {
   text-align: center;
 }
@@ -7,51 +41,37 @@
 }
 
 .link-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-h1, p {
-  padding: 0;
-  margin: 1em 1em;
-}
-
-h2 {
-  margin-top: 20px;
-  padding: 0 10px;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
+/* ==========================================================================
+   Blockquote & Captions
+   ========================================================================== */
 
 blockquote {
   color: var(--font-color);
   background-color: rgba(221, 156, 156, 1);
-  font-stretch: italic;
+  /* Note: changed "font-stretch: italic" to "font-style: italic" */
+  font-style: italic;
   font-weight: bold;
   padding: 50px 30px;
   margin: 5%;
 }
 
-
 .image-caption {
   font-style: italic;
 }
+
+/* ==========================================================================
+   Video Section
+   ========================================================================== */
 
 .video-wrapper {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: clip;
+  overflow: hidden;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -60,33 +80,33 @@ blockquote {
   z-index: 2;
 }
 
-.video-wrapper h1, h2 {
-  z-index: 3;
+.video-wrapper h1,
+.video-wrapper h2 {
   position: relative;
+  z-index: 3;
   color: var(--primary-color);
 }
 
-.video-wrapper p {
-  z-index: 3;
+.video-wrapper p,
+.video-wrapper ul {
   position: relative;
+  z-index: 3;
   color: white;
 }
 
-.video-wrapper ul {
-  z-index: 3;
-  position: relative;
-  color: var(--primary-color);
-}
-
 video {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 1;
 }
+
+/* ==========================================================================
+   Landing Section
+   ========================================================================== */
 
 .landing {
   position: relative;
@@ -102,8 +122,9 @@ video {
   display: flex;
 }
 
-.landing-left h1, .landing-left p {
-  margin: 10px 0; /* Adjust spacing between the elements */
+.landing-left h1,
+.landing-left p {
+  margin: 10px 0;
   text-align: right;
   vertical-align: bottom;
 }
@@ -112,60 +133,78 @@ video {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: rgba(0, 0, 0, 0.0);
   padding: 10px;
   margin: 10px auto;
+  background-color: transparent;
   color: white;
   width: 200px;
   text-align: right;
   vertical-align: bottom;
 }
 
-/* Ensure each section takes full width and has some padding */
-.about, .projects, .portfolio, .socials, .videos, .writing, .aboutpage{
+/* ==========================================================================
+   Sections (About, Projects, Portfolio, Socials, Videos, Writing, About Page)
+   ========================================================================== */
+
+.about,
+.projects,
+.portfolio,
+.socials,
+.videos,
+.writing,
+.aboutpage {
   width: auto;
   padding: 20px;
-  margin: 25px 25px;
-  box-sizing: border-box; /* Includes padding in the element's total width and height */
+  margin: 25px;
+  box-sizing: border-box;
   clear: both;
   border: 1px solid var(--primary-color);
-  /* background color: var(--tertiary-color: #ffff00); */
+  /* background-color: var(--tertiary-color);  Uncomment if needed */
 }
 
-.about-inner, .videos-inner, .aboutpage-inner, .writing-inner{
+/* --------------------------------------------------------------------------
+   Inner Sections
+-------------------------------------------------------------------------- */
+
+.about-inner,
+.videos-inner,
+.aboutpage-inner,
+.writing-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 20px;
-  padding: 20px; 
+  padding: 20px;
   border: 1px solid var(--primary-color);
 }
 
-.about-inner, .aboutpage-inner{
+.about-inner,
+.aboutpage-inner {
   line-height: 1.6;
 }
 
-.aboutpage-inner ul{
+.aboutpage-inner ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px,;
+  margin: 20px;
   padding: 40px;
   border: 1px solid var(--primary-color);
   line-height: 1.6;
 }
 
-/*.about-inner, .aboutpage-inner, .writing-inner p{
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0px;
-}*/
-
+/* --------------------------------------------------------------------------
+   Email
+-------------------------------------------------------------------------- */
 
 #email {
-  overflow-wrap: break-word; /* Or word-break: break-all; */
+  overflow-wrap: break-word;
   font-size: 12px;
 }
+
+/* ==========================================================================
+   Projects Section
+   ========================================================================== */
 
 .projects-inner {
   margin-top: 20px;
@@ -194,25 +233,22 @@ video {
 .projects-inner .project-content {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   align-items: flex-start;
-  gap: 10px; /* Adjust spacing as needed */
+  gap: 10px;
   justify-content: center;
 }
 
-.projects-inner .project-content .text-wrapper{
+.projects-inner .project-content .text-wrapper {
   text-align: center;
 }
-
 
 .projects-inner .project-content .text-wrapper p {
   display: inline;
 }
 
-
 .projects-inner .project .image-wrapper {
   display: block;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1.00)) !important;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1));
 }
 
 .projects-inner .project .image-wrapper img {
@@ -223,26 +259,23 @@ video {
   filter: drop-shadow(0 4px 4px var(--box-shadow-opacity));
   border-radius: 8px;
   border: 5px solid var(--primary-color);
-  }
+}
 
+/* Generic image-wrapper styles */
 .image-wrapper img {
   display: block;
   width: 80%;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1.00));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1));
   border-radius: 8px;
-  }
+}
 
 .projects-inner .project p {
   width: 90%;
   line-height: 1.4;
   margin-left: 20px;
   text-align: justify;
-  /*width: 80%;
-  line-height: 1.4;
-  margin: 0;
-  text-align: center;*/
 }
 
 .projects-inner::after {
@@ -251,14 +284,22 @@ video {
   clear: both;
 }
 
+/* ==========================================================================
+   Portfolio
+   ========================================================================== */
+
 .portfolio-inner {
-  display: flex; /* Use flexbox for horizontal layout */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: space-evenly; /* Distribute items evenly */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
+/* ==========================================================================
+   Soapbox
+   ========================================================================== */
+
 .soapbox {
-  flex: 0 0 calc(50% - 20px); /* Adjust width for two columns with margin */
+  flex: 0 0 calc(50% - 20px);
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -268,8 +309,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   position: relative;
   border: 1px solid var(--primary-color);
 }
@@ -290,141 +330,144 @@ video {
 }
 
 .soapbox-content {
-  padding: 10px; /* Add padding inside soapbox for content */
+  padding: 10px;
 }
 
+/* ==========================================================================
+   Socials
+   ========================================================================== */
+
 .socials {
-  text-align: center; /* Center align the content */
+  text-align: center;
 }
 
 .socials-inner {
   margin-top: 20px;
   padding: 20px;
   display: flex;
-  justify-content: center; /* Center align horizontally */
+  justify-content: center;
 }
 
 .socials-inner ul {
   padding: 20px;
-  display: flex; /* Use flexbox for list items */
-  justify-content: center; /* Center align list items horizontally */
-  flex-wrap: wrap; /* Allow items to wrap */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .socials-inner li {
-  margin-bottom: 10px; /* Adjust spacing between list items */
-  margin-left: 10px; /* Adjust spacing between list items */
+  margin: 0 0 10px 10px;
 }
 
-.image-wrapper {
-  text-align: center; /* Center images within the wrapper */
-  padding: 20px;
-}
+/* ==========================================================================
+   Videos, AI-Art & Writing
+   ========================================================================== */
 
-.videos, .ai-art, .writing {
+.videos,
+.ai-art,
+.writing {
   margin: auto;
   padding: 20px;
 }
 
-.videos-inner, .ai-art-inner, .writing-inner {
-  display: flex; /* Enables flexbox layout */
-  flex-direction: column; /* Arranges items vertically */
-  justify-content: center; /* Centers items vertically */
-  margin-top: 20px; /* Adjust as needed */
-  padding: 20px; /* Adjust padding as needed */
-  border: 1px solid var(--primary-color); /* Example border style */
+.videos-inner,
+.ai-art-inner,
+.writing-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
 }
 
-.videos-inner, .ai-art-inner, .writing-inner h3,
-.videos-inner, .ai-art-inner, .writing-inner h4,
-.videos-inner, .ai-art-inner, .writing-inner p {
-  margin-top: 10px; /* Adjust the top margin as needed */
-  margin-bottom: 10px; /* Adjust the bottom margin as needed */
+.videos-inner h3,
+.videos-inner h4,
+.videos-inner p,
+.ai-art-inner h3,
+.ai-art-inner h4,
+.ai-art-inner p,
+.writing-inner h3,
+.writing-inner h4,
+.writing-inner p {
+  margin: 10px 0;
 }
 
-/* General styles for .youtube-videos */
+/* ==========================================================================
+   YouTube Videos
+   ========================================================================== */
+
 .youtube-videos {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px; /* Adjust margin as needed */
+  margin: 10px;
 }
 
-/* Specific styles for .iframe within .youtube-videos */
 .youtube-videos .iframe {
-  margin: 0; /* Reset margin */
-  padding: 0; /* Reset padding */
-  width: 100%; /* Ensures iframe fills its container */
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
 }
 
-/* Additional styles for .iframe (if necessary) */
-.iframe {
-  margin: 0 auto; /* Center align .iframe within its container */
-}
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 
 .footer {
   text-align: right;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 1% 0;
 }
 
 .footer p {
   margin-right: 1%;
 }
 
-/* Media query for larger screens */
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Larger screens (min-width: 768px) */
 @media (min-width: 768px) {
   .youtube-videos {
     padding: 10px;
   }
 
-.projects-inner .project-content {
-  display: flex;
-  flex-direction: row; /* Arrange horizontally */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  gap: 10px; /* Adjust spacing as needed */
-}
-.projects-inner .project-content .image-wrapper {
-display: block;
-width: 50%; /* Adjust width as needed */}
+  .projects-inner .project-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 
-.projects-inner .project-content .image-wrapper img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border: 2px solid var(--primary-color); /* Apply border to image */
-  box-shadow: 0 4px 8px var(--opacity); /* Apply box shadow to image */
-  border-radius: 8px;
-}
+  .projects-inner .project-content .image-wrapper {
+    display: block;
+    width: 50%;
+  }
 
-.image-wrapper img {
-  display: inline-block; /* Allows the images to be centered */
-  margin: 0 0 10px 0; /* Bottom margin for spacing */
-  margin-right: 20px; /* Right margin for spacing between images */
-  width: 80%;
-  max-width: 500px;
-  height: auto;
-  object-fit: cover;
-}
+  .projects-inner .project-content .image-wrapper img {
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 8px var(--opacity);
+    border-radius: 8px;
+  }
 
-.projects-inner .project-content .text-wrapper {
-  width: 50%; /* Adjust width as needed */
-  text-align: center; /* Center text within text-wrapper */
-  justify-content: center;
-}
+  .image-wrapper img {
+    display: inline-block;
+    margin: 0 20px 10px 0;
+    width: 80%;
+    max-width: 500px;
+    object-fit: cover;
+  }
 
-
-/* Media query for smaller screens */
-
-@media (max-width: 400px) {
-  #email {
-    display: block; /* Ensure the email breaks into a new line if needed */
-    word-break: break-word; /* Allows breaking within words for better fit */
+  .projects-inner .project-content .text-wrapper {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
   }
 }
 
+/* Smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
   .landing-left {
     float: none;
@@ -434,35 +477,30 @@ width: 50%; /* Adjust width as needed */}
   }
 
   .projects-inner .project {
-    overflow: hidden; /* Ensure the container clears floats */
-    margin-bottom: 20px; /* Space between projects */
-    width: auto; /* Override width to auto to ensure proper wrapping */
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: auto;
   }
 
   .projects-inner .project-content {
-    display: flex;
-    flex-direction: column; /* Arrange horizontally */
+    flex-direction: column;
     align-items: center;
   }
 
   .projects-inner .project .image-wrapper {
-    width: 80%; /* Adjust width as needed */
-    max-width: 200px; /* Limit maximum width */
-    margin-right: 1em; /* Space between image and text */
-    margin-bottom: 1em; /* Space below the image */
+    width: 80%;
+    max-width: 200px;
+    margin: 0 auto 1em;
   }
 
   .projects-inner .project .text-wrapper {
-    /*width: calc(60% - 1em);  Adjust width to account for margin */
     text-align: center;
   }
 
   .projects-inner .project p {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    /* Ensure the paragraph wraps around the floated image */
+    margin: 0;
+    padding: 0;
   }
-}
 
   .soapbox {
     flex: 0 0 calc(100% - 20px);
@@ -470,8 +508,8 @@ width: 50%; /* Adjust width as needed */}
   }
 
   .videos-inner {
-    margin-top: 10px; /* Adjusted margin for smaller screens */
-    padding: 10px; /* Adjusted padding for smaller screens */
+    margin-top: 10px;
+    padding: 10px;
   }
 
   .iframe {
@@ -479,6 +517,18 @@ width: 50%; /* Adjust width as needed */}
     height: auto;
   }
 }
+
+/* Extra small screens (max-width: 400px) */
+@media (max-width: 400px) {
+  #email {
+    display: block;
+    word-break: break-word;
+  }
+}
+
+/* ==========================================================================
+   Firefox Specific
+   ========================================================================== */
 
 @-moz-document url-prefix() {
   .container {

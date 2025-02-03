@@ -1,12 +1,26 @@
-/* font colors go in colors.css */
+/* fonts.css */
 
-body, html {
-	font-family: Helvetica;
+/* ----------------------------------------------------------------------------
+   NOTE:
+   Font colors should be managed in colors.css.
+   ---------------------------------------------------------------------------- */
+
+
+/* ==========================================================================
+   Base Typography
+   ========================================================================== */
+body,
+html {
+  font-family: Helvetica;
   font-size: 100%;
 }
 
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
 .bold {
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .italic {
@@ -16,10 +30,14 @@ body, html {
 
 .italic-and-bold {
   font-style: italic;
-  font-weight:bold;
+  font-weight: bold;
   font-size: 0.9em;
 }
 
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
 h1 {
   font-size: 2.5em;
 }
@@ -29,14 +47,18 @@ h2 {
 }
 
 h3 {
-  font-size: 1.40625em; /* approximately 22.5px/16=1.40625em */
+  font-size: 1.40625em; /* approximately 22.5px/16 */
 }
 
 h4 {
-  font-size: 1.0546875em; /* approximately 17px/16=1.0546875em */
-  font-style:italic;
+  font-size: 1.0546875em; /* approximately 17px/16 */
+  font-style: italic;
 }
 
+
+/* ==========================================================================
+   Text Elements
+   ========================================================================== */
 p {
   font-size: 1.8em;
 }
@@ -46,19 +68,28 @@ blockquote {
   font-size: 2.5em;
 }
 
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
 body a {
   text-decoration: underline;
 }
 
 body a:hover {
-  text-decoration: none; /* Underline on hover */
+  text-decoration: none; /* Remove underline on hover */
 }
 
-.about-inner, .aboutpage-inner p {
+
+/* ==========================================================================
+   Section-Specific Typography
+   ========================================================================== */
+.about-inner,
+.aboutpage-inner p {
   font-size: 1.2em;
 }
 
-.aboutpage-inner ul{
+.aboutpage-inner ul {
   font-size: 1.2em;
 }
 
@@ -66,6 +97,10 @@ body a:hover {
   font-size: 1.2em;
 }
 
+
+/* ==========================================================================
+   Socials
+   ========================================================================== */
 .socials-inner ul {
   list-style-type: none; /* Remove default list styles */
 }
@@ -73,10 +108,16 @@ body a:hover {
 .socials-inner a {
   text-decoration: underline;
 }
-/* fonts.css */
+
+.socials-inner a:hover {
+  text-decoration: none;
+}
 
 
-/* Used for accesibility; a variation of traditional alt text */
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+/* Used for accessibility; a variation of traditional alt text */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -88,12 +129,10 @@ body a:hover {
   border: 0;
 }
 
-.socials-inner a:hover {
-  text-decoration: none; /* Underline on hover */
-}
 
-
+/* ==========================================================================
+   Overrides / Miscellaneous
+   ========================================================================== */
 #email {
-    font-size: 1em !important; /* !important should be here */
+  font-size: 1em !important; /* !important should be here */
 }
-

@@ -1,14 +1,26 @@
 /* colors.css */
 
+/* ==========================================================================
+   Global Colors & Typography
+   ========================================================================== */
+
+/* Base body text and background */
 body {
   color: var(--font-color);
   background-color: var(--main-bg-color);
 }
 
+/* Heading color override */
 h4 {
   color: var(--primary-color);
 }
 
+
+/* ==========================================================================
+   Link Colors
+   ========================================================================== */
+
+/* Global link states */
 body a {
   color: var(--font-color);
 }
@@ -21,6 +33,7 @@ body a:active {
   color: orange;
 }
 
+/* Landing-right specific link states */
 .landing-right a:link,
 .landing-right a:visited {
   color: white;
@@ -34,6 +47,12 @@ body a:active {
   color: orange;
 }
 
+
+/* ==========================================================================
+   Section Backgrounds
+   ========================================================================== */
+
+/* About Section */
 .about {
   background-color: var(--secondary-color);
 }
@@ -42,6 +61,7 @@ body a:active {
   background-color: var(--opacity);
 }
 
+/* Projects Section */
 .projects {
   background-color: var(--main-bg-color);
 }
@@ -50,28 +70,56 @@ body a:active {
   background-color: var(--opacity);
 }
 
+/* Portfolio Section */
+.portfolio {
+  background-color: var(--secondary-color);
+}
+
+/* Socials Section */
+.socials {
+  background-color: var(--main-bg-color);
+}
+
+/* Inner background for Videos, AI-Art, Writing, and About Page sections */
+.videos-inner,
+.ai-art-inner,
+.writing-inner,
+.aboutpage-inner {
+  background-color: var(--opacity);
+}
+
+
+/* ==========================================================================
+   Project & Image Styling
+   ========================================================================== */
+
+/* Projects inner project images */
 .projects-inner .project img {
   border: 2px solid var(--primary-color);
   box-shadow: 0 4px 8px var(--opacity);
 }
 
-.portfolio {
-  background-color: var(--secondary-color);
+/* Generic image-wrapper images */
+.image-wrapper img {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 4px 8px var(--opacity);
 }
 
-.socials {
-  background-color: var(--main-bg-color);
-}
+
+/* ==========================================================================
+   Socials Inner Elements
+   ========================================================================== */
 
 .socials-inner {
   background-color: var(--opacity);
-  border:  1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .socials-inner ul {
   list-style-type: none;
 }
 
+/* Socials links */
 .socials-inner a {
   color: #000;
 }
@@ -84,23 +132,26 @@ body a:active {
   color: orange;
 }
 
-.videos-inner, .ai-art-inner, .writing-inner, .aboutpage-inner{
-  background-color: var(--opacity);
-}
 
-.aboutpage-inner h3{
+/* ==========================================================================
+   Additional Section Colors
+   ========================================================================== */
+
+/* Aboutpage heading */
+.aboutpage-inner h3 {
   color: var(--primary-color);
 }
 
-.image-wrapper img {
-  box-shadow: 0 4px 8px var(--opacity);
+/* YouTube videos container */
+.youtube-videos {
   border: 1px solid var(--primary-color);
+  box-shadow: 0 4px 8px var(--opacity);
 }
 
-.youtube-videos{
-  border:  1px solid var(--primary-color);
-  box-shadow: 0 4px 8px var(--opacity);
-}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 
 .footer {
   background-color: var(--main-bg-color);

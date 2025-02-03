@@ -1,6 +1,12 @@
 /* style.css */
 
-@import "root.css"; 
-@import "layout.css";
-@import "fonts.css";
-@import "colors.css";
+/* 
+  Main stylesheet that imports all modular CSS files.
+  Ensure that all @import statements are at the top of the file 
+  for proper cascading behavior.
+*/
+
+@import "root.css";   /* CSS Variables and Base Colors */
+@import "layout.css"; /* Layout and structural styles */
+@import "fonts.css";  /* Typography and font styling */
+@import "colors.css"; /* Color and background styling */
