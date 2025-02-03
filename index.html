@@ -10,234 +10,315 @@
   <meta name="description" content="Firecracker Media Homepage">
 </head>
 <body>
-  <div class="header">
+  <!-- Header with landing video and navigation -->
+  <header class="header">
     <div class="landing">
       <div class="video-wrapper">
-        <span class="visually-hidden">Black and white video of a small belt of firecrackers exploding.</span>
+        <!-- Accessible description of the video -->
+        <span class="visually-hidden">
+          Black and white video of a small belt of firecrackers exploding.
+        </span>
         <video playsinline autoplay muted loop poster="./assets/firecracker_static.png">
           <source src="assets/firecracker.webm" type="video/webm">
           <source src="assets/firecracker.mp4" type="video/mp4">
-        This was supposed to be a black and white inverted video of a small belt of firecrackers exploding.
-        But, it looks like your browser doesn't support the video tag.
+          Your browser does not support the video tag.
         </video>
+
+        <!-- Landing content -->
         <div class="landing-left">
           <h1>Firecracker Media</h1>
           <p class="bold">Human Created, AI Augmented, New Media</p>
         </div>
-        <div class="landing-right">    
-          <ul style="list-style-type:none;">
+
+        <!-- Navigation menu -->
+        <nav class="landing-right">
+          <ul class="nav-list">
             <li><a href="#about-anchor-link">About</a></li>
             <li><a href="#projects-anchor-link">Projects</a></li>
             <li><a href="#portfolio-anchor-link">Portfolio</a></li>
-            <li>
-            <a href="#socials-anchor-link">Socials</a></li>
+            <li><a href="#socials-anchor-link">Socials</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </div>
-  </div>
-  <div class="main">
-    <!-- about section -->
-    <div class="about">
+  </header>
+
+  <!-- Main content -->
+  <main class="main">
+    <!-- About Section -->
+    <section class="about" id="about-anchor-link-section">
       <h2 id="about-anchor-link">About</h2>
       <div class="about-inner">
-        <p>Firecracker Media is the creative endeavor of Vidal Palacios (also known as Vidal Peterson), a versatile artist with a rich background as an <a href="https://www.imdb.com/name/nm0677437/" >actor,</a> writer, and director. In addition to his creative pursuits, Vidal brings extensive expertise in <a href="https://www.imdb.com/name/nm0657284/" >production</a>, development, full-stack web development, and AI research tailored for media applications. Click <a href="about.html">here</a> to learn more about his background and discover his vision for the future of Firecracker Media.</p>
+        <p>
+          Firecracker Media is the creative endeavor of Vidal Palacios (also known as Vidal Peterson), a versatile artist with a rich background as an 
+          <a href="https://www.imdb.com/name/nm0677437/">actor</a>, writer, and director. In addition to his creative pursuits, Vidal brings extensive expertise in 
+          <a href="https://www.imdb.com/name/nm0657284/">production</a>, development, full-stack web development, and AI research tailored for media applications. 
+          Click <a href="about.html">here</a> to learn more about his background and discover his vision for the future of Firecracker Media.
+        </p>
       </div>
-    </div>
-    <!-- projects section -->
-    <div class="projects">
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects-anchor-link-section">
       <h2 id="projects-anchor-link">Projects</h2>
       <div class="projects-inner">
         <!-- Current Projects -->
         <div class="current-projects">
           <h3>Current Projects</h3>
-          <!-- Project The Red One -->
-          <div class="project">
+          <!-- Project: The Red One -->
+          <article class="project">
             <h4>Project: The Red One</h4>
             <div class="project-content">
               <div class="image-wrapper">
                 <img src="assets/images/projects_home/bennet_ponders.png" alt="Project The Red One">
               </div>
               <div class="text-wrapper">
-                <span class="visually-hidden">A black and white image of a small silhouette of a seated man looking over a jungle at a star-filled sky.</span>
-                <p>Project: Red One is a multimedia adaptation of Jack London's iconic short story, blending narrative, visuals, and sound design into a unique cinematic experience. Set in a remote jungle, the story explores the discovery of a mysterious artifact that changes the lives of those who encounter it. Drawing on London's themes of survival, mystery, and the untamed forces of nature, Red One brings a fresh, immersive approach to a classic tale, fusing traditional storytelling with cutting-edge media techniques. Currently in prep, this project promises to captivate with its powerful blend of adventure and the unknown.</p>
+                <span class="visually-hidden">
+                  A black and white image of a small silhouette of a seated man looking over a jungle at a star-filled sky.
+                </span>
+                <p>
+                  Project: Red One is a multimedia adaptation of Jack London's iconic short story, blending narrative, visuals, and sound design into a unique cinematic experience.
+                  Set in a remote jungle, the story explores the discovery of a mysterious artifact that changes the lives of those who encounter it. Drawing on London's themes of survival, mystery, and the untamed forces of nature,
+                  Red One brings a fresh, immersive approach to a classic tale, fusing traditional storytelling with cutting-edge media techniques. Currently in prep, this project promises to captivate with its powerful blend of adventure and the unknown.
+                </p>
               </div>
             </div>
-          <!-- Project Thea -->
-          <div class="project">
+          </article>
+
+          <!-- Project: Thea -->
+          <article class="project">
             <h4>Project: Thea</h4>
             <div class="project-content">
               <div class="image-wrapper">
                 <img src="assets/images/projects_home/thea_home_projects.png" alt="Project Thea">
               </div>
               <div class="text-wrapper">
-                <span class="visually-hidden">A young, smiling, attractive red-headed woman.</span>
-                <p>An interactive storytelling experience featuring a character powered by an AI model. Project: Thea serves as a research pilot, testing interactive elements and storytelling techniques to advance interactive media. Explore the codebase <a href="https://github.com/marblecube/Project_Thea">here</a>.</p>
+                <span class="visually-hidden">
+                  A young, smiling, attractive red-headed woman.
+                </span>
+                <p>
+                  An interactive storytelling experience featuring a character powered by an AI model. Project: Thea serves as a research pilot, testing interactive elements and storytelling techniques to advance interactive media.
+                  Explore the codebase <a href="https://github.com/marblecube/Project_Thea">here</a>.
+                </p>
               </div>
             </div>
-          </div>
+          </article>
         </div>
+
         <!-- Ongoing Projects -->
         <div class="ongoing-projects">
           <h3>Ongoing Projects</h3>
-          <!-- Project Theogeny -->
-          <div class="project">
+          <!-- Project: Theogeny -->
+          <article class="project">
             <h4>Project: Theogeny</h4>
             <div class="project-content">
               <div class="image-wrapper">
                 <img src="assets/images/projects_home/Zeus_from_Theogeny.png" alt="Project Theogeny">
               </div>
               <div class="text-wrapper">
-                <span class="visually-hidden">A close up of Zeus with lightning crackling about his head and shoulders and his eyes glowing with a energy.</span>
-                <p>Project: Theogeny features AI-generated video animations that explore the origins and evolution of the Greek pantheon, starting with the Greek Creation Myth and progressing through the key elements of Hesiod's Theogony. The project brings to life the emergence of Gaia, Uranus, Eros, and more, offering a compelling and immersive look into the myths that shaped ancient Greece and one of history’s most enduring traditions. View the <a href="https://youtube.com/playlist?list=PLWaqI66SnLvC_PtvlwpXCddlyrNu2skmE&si=uWpRHq_7DIzLw_g-">current episodes</a> on YouTube.</p>
+                <span class="visually-hidden">
+                  A close up of Zeus with lightning crackling about his head and shoulders and his eyes glowing with energy.
+                </span>
+                <p>
+                  Project: Theogeny features AI-generated video animations that explore the origins and evolution of the Greek pantheon, starting with the Greek Creation Myth and progressing through the key elements of Hesiod's Theogony.
+                  The project brings to life the emergence of Gaia, Uranus, Eros, and more, offering a compelling and immersive look into the myths that shaped ancient Greece and one of history’s most enduring traditions.
+                  View the <a href="https://youtube.com/playlist?list=PLWaqI66SnLvC_PtvlwpXCddlyrNu2skmE&si=uWpRHq_7DIzLw_g-">current episodes</a> on YouTube.
+                </p>
               </div>
             </div>
-          </div>
-          </div>
-          <!-- Project Community Outreach -->
-          <div class="project">
-            <h4>Project: Community Outreach</h4>
-            <div class="project-content">
-              <div class="image-wrapper">
-                <img src="assets/images/projects_home/community_outreach_projects.png" alt="Project Community Outreach">
-              </div>
-              <div class="text-wrapper">
-                <span class="visually-hidden">A mid-century Americana style poster of hands shaking as a man in a business suit and red sunglasses looks on and smiles. There are buildings in the background and a red car of the period underneath.</span>
-                <p>The creation of this anchor website and associated <a href="#socials-anchor-link">social media presences</a>.</p>
-              </div>
-            </div>
-          </div>
+          </article>
         </div>
+
+        <!-- Project: Community Outreach -->
+        <article class="project">
+          <h4>Project: Community Outreach</h4>
+          <div class="project-content">
+            <div class="image-wrapper">
+              <img src="assets/images/projects_home/community_outreach_projects.png" alt="Project Community Outreach">
+            </div>
+            <div class="text-wrapper">
+              <span class="visually-hidden">
+                A mid-century Americana style poster of hands shaking as a man in a business suit and red sunglasses looks on and smiles. There are buildings in the background and a red car of the period underneath.
+              </span>
+              <p>
+                The creation of this anchor website and associated <a href="#socials-anchor-link">social media presences</a>.
+              </p>
+            </div>
+          </div>
+        </article>
+
         <!-- Recently Completed Projects -->
         <div class="recently-completed-projects">
           <h3>Recently Completed Projects</h3>
-          <!-- Project Storyteller -->
-          <div class="project">
+          <!-- Project: Storyteller -->
+          <article class="project">
             <h4>Project: Storyteller</h4>
             <div class="project-content">
               <div class="image-wrapper">
                 <img src="assets/images/projects_home/storyteller_projects.png" alt="Project Storyteller">
               </div>
               <div class="text-wrapper">
-                <span class="visually-hidden">An illustration of a serene nighttime forest setting with a group of people sitting in a circle around a glowing campfire. At the center of the circle, an elderly storyteller with a long white beard gestures as he shares a tale. Above them, the word 'STORYTELLER' appears in fiery, glowing text, blending with the warm hues of the fire. The surrounding trees and starlit sky add a magical and inviting atmosphere.</span>
-                <p>Project Storyteller is a cutting-edge Python-based platform that powers interactive, relationship-building “choose your own adventure” storytelling experiences. It combines Gradio for user-friendly voice and text chat interfaces, Ollama’s locally hosted LLMs for dynamic narrative generation, and ElevenLabs’ API for lifelike narration, creating deeply engaging, personalized story interactions. Designed with portability in mind, the system’s adaptable architecture opens doors for future applications in robotics, where it could enable interactive, emotionally resonant storytelling with humanoid companions or other AI-driven devices. Project Storyteller represents the next step in immersive, choice-driven entertainment and beyond.</p>
+                <span class="visually-hidden">
+                  An illustration of a serene nighttime forest setting with a group of people sitting in a circle around a glowing campfire. At the center of the circle, an elderly storyteller with a long white beard gestures as he shares a tale. Above them, the word "STORYTELLER" appears in fiery, glowing text, blending with the warm hues of the fire. The surrounding trees and starlit sky add a magical and inviting atmosphere.
+                </span>
+                <p>
+                  Project Storyteller is a cutting-edge Python-based platform that powers interactive, relationship-building “choose your own adventure” storytelling experiences.
+                  It combines Gradio for user-friendly voice and text chat interfaces, Ollama’s locally hosted LLMs for dynamic narrative generation, and ElevenLabs’ API for lifelike narration, creating deeply engaging, personalized story interactions.
+                  Designed with portability in mind, the system’s adaptable architecture opens doors for future applications in robotics, where it could enable interactive, emotionally resonant storytelling with humanoid companions or other AI-driven devices.
+                  Project Storyteller represents the next step in immersive, choice-driven entertainment and beyond.
+                </p>
               </div>
             </div>
-          </div>
-          <!-- Project Pagoda -->
-          <div class="project">
+          </article>
+
+          <!-- Project: Pagoda of the Blood Mask -->
+          <article class="project">
             <h4>Project: Pagoda of the Blood Mask</h4>
             <div class="project-content">
               <div class="image-wrapper">
                 <img src="assets/images/projects_home/pagoda_home_projects.png" alt="Project Pagoda of the Blood Mask">
               </div>
               <div class="text-wrapper">
-                <span class="visually-hidden">A pagoda surrounded by gardens and bridgeways</span>
-                <p>A Japanese gothic screenplay about a tyrannical prince seeking refuge at a warrior-monk’s temple during a plague. Entangled in a mysterious puppet play, he faces supernatural forces and revelations about his past. This atmospheric tale blends horror with themes of fate and retribution.</p>
+                <span class="visually-hidden">
+                  A pagoda surrounded by gardens and bridgeways.
+                </span>
+                <p>
+                  A Japanese gothic screenplay about a tyrannical prince seeking refuge at a warrior-monk’s temple during a plague.
+                  Entangled in a mysterious puppet play, he faces supernatural forces and revelations about his past. This atmospheric tale blends horror with themes of fate and retribution.
+                </p>
               </div>
             </div>
-          </div>
-                    <!-- Project Red One -->
-          <div class="project">
+          </article>
+
+          <!-- Project: Red One (Recently Completed) -->
+          <article class="project">
             <h4 id="red_one-anchor-link">Project: Red One</h4>
             <div class="project-content">
               <div class="image-wrapper">
                 <img src="assets/images/projects_home/red_1_home_projects.png" alt="Project Red One">
               </div>
               <div class="text-wrapper">
-                <span class="visually-hidden">Identifying mark for Red One composed of the letter R in various layers with the number 1 in bright red"</span>
-                <p> A multimedia presentation via various online platforms that was made possible, in part, by a grant from <a href="https://www.unitedstatesartists.org/" _>United States Artists</a>.</p>
+                <span class="visually-hidden">
+                  Identifying mark for Red One composed of the letter R in various layers with the number 1 in bright red.
+                </span>
+                <p>
+                  A multimedia presentation via various online platforms that was made possible, in part, by a grant from 
+                  <a href="https://www.unitedstatesartists.org/">United States Artists</a>.
+                </p>
               </div>
             </div>
-          </div>
+          </article>
         </div>
+
         <!-- Future Projects -->
         <div class="future-projects">
           <h3>Future Projects</h3>
-          <!-- Project Guardian -->
-          <div class="project">
+          <!-- Project: Guardian -->
+          <article class="project">
             <h4>Project: Guardian</h4>
             <div class="project-content">
               <div class="image-wrapper">
                 <img src="assets/images/projects_home/guardian_home_projects.png" alt="Project Guardian">
               </div>
               <div class="text-wrapper">
-                <span class="visually-hidden">A small, blonde haired, blue eyed child holding a stuffed animal.</span>
-                <p>A science fiction novella about a boy chosen as a guardian in a world ruled by AI and unseen administrators. Exploring duty, identity, and humanity's ties to technology, the project is currently in the outline phase.</p>
+                <span class="visually-hidden">
+                  A small, blonde haired, blue eyed child holding a stuffed animal.
+                </span>
+                <p>
+                  A science fiction novella about a boy chosen as a guardian in a world ruled by AI and unseen administrators.
+                  Exploring duty, identity, and humanity's ties to technology, the project is currently in the outline phase.
+                </p>
               </div>
             </div>
-          </div>
-          <!-- Project Hometown -->
-          <div class="project">
+          </article>
+
+          <!-- Project: Hometown -->
+          <article class="project">
             <h4>Project: Hometown</h4>
             <div class="project-content">
               <div class="image-wrapper">
                 <img src="assets/images/projects_home/hometown_home_projects.jpg" alt="Project Hometown">
               </div>
               <div class="text-wrapper">
-                <span class="visually-hidden">A promotional poster with the project's title over a glitched background of cool blues, greens, and various earth tones.</span>
-                <p>A collection of documentary photographs taken in a suburban landscape alongside these same photos reworked via artificial intelligence.</p>
+                <span class="visually-hidden">
+                  A promotional poster with the project's title over a glitched background of cool blues, greens, and various earth tones.
+                </span>
+                <p>
+                  A collection of documentary photographs taken in a suburban landscape alongside these same photos reworked via artificial intelligence.
+                </p>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
-    </div>
-      <!-- portfolio section -->
-      <div class="portfolio">
-        <h2 id="portfolio-anchor-link">Portfolio</h2>
-        <div class="portfolio-inner">
-          <!-- Soapboxes for Writing, Video, AI, Photography -->
-          <!-- Writing Soapbox -->
-          <div class="soapbox" style="background-image: url(assets/images/portfolio_home/writers_typewriter.jpg);">
-            <div class="soapbox-content">
-              <span class="visually-hidden">An AI generated close-up of a typewriter on a desk. It has been desaturated to greyscale.</span>
-              <a href="writing.html">Writing</a>
-            </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio-anchor-link-section">
+      <h2 id="portfolio-anchor-link">Portfolio</h2>
+      <div class="portfolio-inner">
+        <!-- Soapbox: Writing -->
+        <article class="soapbox" style="background-image: url('assets/images/portfolio_home/writers_typewriter.jpg');">
+          <div class="soapbox-content">
+            <span class="visually-hidden">
+              An AI generated close-up of a typewriter on a desk. It has been desaturated to greyscale.
+            </span>
+            <a href="writing.html">Writing</a>
           </div>
-          <!-- Video Soapbox -->
-          <div class="soapbox" style="background-image: url(assets/images/portfolio_home/deckards_VCR.jpg);">
-            <div class="soapbox-content">
-              <span class="visually-hidden">An AI generated close-up of a vintage VCR control panel. It has been desaturated and tinted to pinks and blues.</span>
-              <a href="video.html">Video</a>
-            </div>
+        </article>
+        <!-- Soapbox: Video -->
+        <article class="soapbox" style="background-image: url('assets/images/portfolio_home/deckards_VCR.jpg');">
+          <div class="soapbox-content">
+            <span class="visually-hidden">
+              An AI generated close-up of a vintage VCR control panel. It has been desaturated and tinted to pinks and blues.
+            </span>
+            <a href="video.html">Video</a>
           </div>
-          <!-- AI Soapbox -->
-          <div class="soapbox" style="background-image: url(assets/images/portfolio_home/firecracker_stand.png);">
-            <div class="soapbox-content">
-              <span class="visually-hidden">An AI generated close-up of a fireworks stand with a sign that reads Firecracker Media. This image is inverted and has a red tinge to it.</span>
-              <a href="ai-art.html">AI</a>
-            </div>
+        </article>
+        <!-- Soapbox: AI -->
+        <article class="soapbox" style="background-image: url('assets/images/portfolio_home/firecracker_stand.png');">
+          <div class="soapbox-content">
+            <span class="visually-hidden">
+              An AI generated close-up of a fireworks stand with a sign that reads Firecracker Media. This image is inverted and has a red tinge to it.
+            </span>
+            <a href="ai-art.html">AI</a>
           </div>
-          <!-- Photography Soapbox -->
-          <div class="soapbox" style="background-image: url(assets/images/portfolio_home/photography.png);">
-            <div class="soapbox-content">
-              <span class="visually-hidden">An AI generated close-up of a 35 mm film camera. This image is also tinted to red with a gradient overlay and seems to have some pixelated artifacts.</span>
-              <a href="https://portfolio.pixelfed.social/Firecracker">Photography</a>
-            </div>
+        </article>
+        <!-- Soapbox: Photography -->
+        <article class="soapbox" style="background-image: url('assets/images/portfolio_home/photography.png');">
+          <div class="soapbox-content">
+            <span class="visually-hidden">
+              An AI generated close-up of a 35 mm film camera. This image is also tinted to red with a gradient overlay and seems to have some pixelated artifacts.
+            </span>
+            <a href="https://portfolio.pixelfed.social/Firecracker">Photography</a>
           </div>
-        </div>
+        </article>
       </div>
-      <!-- socials section -->
-      <div class="socials">
-        <h2 id="socials-anchor-link">Socials</h2>
-        <div class="socials-inner">
-          <ul style="list-style-type:none;padding: 30px; text-align: center;">
-            <li><a href="https://www.instagram.com/firecracker_media_001/">Instagram</a></li>
-            <li><a href="https://www.youtube.com/@vidalpalacios2282/videos">YouTube</a></li>
-            <li><a href="https://portfolio.pixelfed.social/Firecracker">PixelFed</a></li>
-            <li><a href="https://github.com/marblecube">GitHub</a></li>
-            <li><a href="https://www.threads.net/@firecracker_media_001">Threads</a>
-            <li><a href="https://www.imdb.com/name/nm0677437/">IMDB (Acting Credits)</a></li>
-            <li><a href="https://www.imdb.com/name/nm0657284/">IMDB (Crew Credits)</a></li>
-          </ul>
-        </div>
+    </section>
+
+    <!-- Socials Section -->
+    <section class="socials" id="socials-anchor-link-section">
+      <h2 id="socials-anchor-link">Socials</h2>
+      <div class="socials-inner">
+        <ul class="social-list">
+          <li><a href="https://www.instagram.com/firecracker_media_001/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@vidalpalacios2282/videos">YouTube</a></li>
+          <li><a href="https://portfolio.pixelfed.social/Firecracker">PixelFed</a></li>
+          <li><a href="https://github.com/marblecube">GitHub</a></li>
+          <li><a href="https://www.threads.net/@firecracker_media_001">Threads</a></li>
+          <li><a href="https://www.imdb.com/name/nm0677437/">IMDB (Acting Credits)</a></li>
+          <li><a href="https://www.imdb.com/name/nm0657284/">IMDB (Crew Credits)</a></li>
+        </ul>
       </div>
-    </div>
-  </body>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer class="footer">
-    <p> &#169; 2024</p>
+    <p>&#169; 2024</p>
   </footer>
+
   <!-- Scripts -->
   <script src="scripts/email.js"></script>
+</body>
 </html>
