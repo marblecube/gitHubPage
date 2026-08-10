@@ -3,55 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firecracker Media</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Videos - Firecracker Media</title>
+  <link rel="stylesheet" href="css/index.css">
   <meta name="author" content="Vidal Palacios">
   <meta name="keywords" content="Video Production, Media Production, New Media, Art">
-  <meta name="description" content="Firecracker Media Homepage">
+  <meta name="description" content="Firecracker Media Videos">
 </head>
-
 <body>
-  <div class="videos">
-  <h2>Videos</h2>
-
-    <div class="videos-inner">
-
-    <h3><a href="index.html#red_one-anchor-link">Red One</a></h3>
-
-    <h4>Chinatown Excursion</h4>
-  
-    <p>A captivating journey through the heart of Los Angeles' Chinatown. This video montage captures the vibrant essence of Chinatown, beginning at the light rail station and weaving through both modern developments and the timeless beauty of Old Chinatown. Experience the charm of paper lanterns and traditional architecture, culminating in a serene ride back on the train with mesmerizing views from the window.</p> 
-    <p>This piece, recorded during the earliest days of the COVID quarantine, is part of Firecracker Media's portfolio and stems from the <a href="index.html#red_one-anchor-link">"Red One" project</a>, proudly supported by a grant from <a href="https://www.unitedstatesartists.org/">U.S. Artists</a>.</p>
-
-      <div class="youtube-videos">
-      <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/iIBkQgrDauc?si=IarRc-Om7RzrDmyj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-
-    <p>Check out more videos from Project: R1 on <a href="https://www.youtube.com/watch?v=1XCUd2WAdO0&list=PLWaqI66SnLvDFdhhoHr3X971PGV24f5dh">YouTube</a>.</p>
-    <p><a href="https://firecrackermedia.co/">Back to homepage</a></p>
+  <!-- Header -->
+  <header class="header" style="height: 40vh;">
+    <div class="video-wrapper">
+      <img src="assets/images/portfolio_home/deckards_VCR.jpg" alt="Videos" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2; filter: grayscale(100%);">
     </div>
-
-    <div class="videos-inner">
-
-    <h3>Commercial Demo Reel</h3>
-
-    <h4>Corporate Sell Out Demo Reel</h4>
-  
-    <p>My latest demo reel showcasing a collection of spec spots that highlight my creative approach to advertising. Featuring imaginative concepts like 'Skateboard Pizza' and an animated special effect set to Satie's Gymnopedia, each spot demonstrates my expertise in crafting compelling visual narratives. Embracing a nostalgic 90s VCR demo reel style, this compilation celebrates creativity and innovation in advertising. Dive into the reel to see how I bring unique concepts to life with retro-inspired edits.</p>
-
-      <div class="youtube-videos">
-      <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/rveshSEUJxg?si=pdEhq9yfp8CUzbY5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-
-    <p><a href="https://firecrackermedia.co/">Back to homepage</a></p>
+    <div class="landing-content" style="padding: var(--space-sm) var(--space-md);">
+      <h1 class="animate-fade-in">Videos</h1>
+      <nav class="animate-fade-in" style="animation-delay: 0.2s;">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#portfolio-anchor-link">Portfolio</a></li>
+        </ul>
+      </nav>
     </div>
-</div>
+  </header>
 
+  <main class="main container">
+    <div class="projects-grid" style="grid-template-columns: 1fr; gap: var(--space-lg);">
+      <!-- Video 1 -->
+      <section class="glass-card hover-glow animate-fade-in" style="animation-delay: 0.4s; position: relative; z-index: 10; margin-top: -3rem;">
+        <h3 style="color: var(--accent-secondary);"><a href="index.html#red_one-anchor-link" style="color: inherit;">Red One</a></h3>
+        <h4 style="margin-bottom: var(--space-sm);">Chinatown Excursion</h4>
+        <p style="margin-bottom: var(--space-sm);">
+          A captivating journey through the heart of Los Angeles' Chinatown. This video montage captures the vibrant essence of Chinatown, beginning at the light rail station and weaving through both modern developments and the timeless beauty of Old Chinatown. Experience the charm of paper lanterns and traditional architecture, culminating in a serene ride back on the train with mesmerizing views from the window.
+        </p> 
+        <p style="margin-bottom: var(--space-md);">
+          This piece, recorded during the earliest days of the COVID quarantine, is part of Firecracker Media's portfolio and stems from the <a href="index.html#red_one-anchor-link">"Red One" project</a>, proudly supported by a grant from <a href="https://www.unitedstatesartists.org/" target="_blank">U.S. Artists</a>.
+        </p>
 
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow); margin-bottom: var(--space-sm);">
+          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/iIBkQgrDauc?si=IarRc-Om7RzrDmyj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <p style="text-align: right; font-size: 0.9rem;">
+          Check out more videos from Project: R1 on <a href="https://www.youtube.com/watch?v=1XCUd2WAdO0&list=PLWaqI66SnLvDFdhhoHr3X971PGV24f5dh" target="_blank">YouTube</a>.
+        </p>
+      </section>
+
+      <!-- Video 2 -->
+      <section class="glass-card hover-glow animate-fade-in" style="animation-delay: 0.6s;">
+        <h3 style="color: var(--accent-secondary);">Commercial Demo Reel</h3>
+        <h4 style="margin-bottom: var(--space-sm);">Corporate Sell Out Demo Reel</h4>
+        <p style="margin-bottom: var(--space-md);">
+          My latest demo reel showcasing a collection of spec spots that highlight my creative approach to advertising. Featuring imaginative concepts like 'Skateboard Pizza' and an animated special effect set to Satie's Gymnopedia, each spot demonstrates my expertise in crafting compelling visual narratives. Embracing a nostalgic 90s VCR demo reel style, this compilation celebrates creativity and innovation in advertising. Dive into the reel to see how I bring unique concepts to life with retro-inspired edits.
+        </p>
+
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);">
+          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/rveshSEUJxg?si=pdEhq9yfp8CUzbY5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><a href="index.html">Back to homepage</a></p>
+    <p>&#169; 2024 Firecracker Media</p>
+  </footer>
 </body>
-<footer class="footer">
-    <p> &#169; 2024</p>
-</footer>
-
 </html>
-

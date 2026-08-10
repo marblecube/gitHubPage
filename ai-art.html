@@ -3,31 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firecracker Media</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>AI Art - Firecracker Media</title>
+  <link rel="stylesheet" href="css/index.css">
   <meta name="author" content="Vidal Palacios">
   <meta name="keywords" content="Video Production, Media Production, New Media, Art">
-  <meta name="description" content="Firecracker Media Homepage">
+  <meta name="description" content="Firecracker Media AI Art">
 </head>
-
 <body>
-  <div class="ai-art">
-    <h2>Ai Art</h2>
-    <div class="ai-art-inner">
-      <p>An example of an advanced technique in artificial image generation using Stable Diffusion v1.5 and the OpenPose ControlNet, running on a Python server with an A100 GPU on Google Colab.</p>
-      <p><a href="https://firecrackermedia.co/">Back to homepage</a></p>
-      <div class="image-wrapper">
-        <img src="assets/images/ai-art/original-model.jpg" alt="Source model for use with ControlNet in Stable Diffusion" />
-        <img src="assets/images/ai-art/controlnet-stick-figure.png" alt="Source model as a ControlNet in Stable Diffusion" />
-        <img src="assets/images/ai-art/orignal-model-with-generated-female-model.png" alt="Source model for use with ControlNet in Stable Diffusion" />
-        <img src="assets/images/ai-art/orignal-model-with-generated-male-model.png" alt="Source model for use with ControlNet in Stable Diffusion" />
-        <img src="assets/images/ai-art/orignal-model-with-generated-gorilla-model.png" alt="Source model for use with ControlNet in Stable Diffusion" />
-      </div>
-      <p><a href="https://firecrackermedia.co/">Back to homepage</a></p>
+  <!-- Header -->
+  <header class="header" style="height: 40vh;">
+    <div class="video-wrapper">
+      <img src="assets/images/portfolio_home/firecracker_stand.png" alt="AI Art" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2; filter: grayscale(100%);">
     </div>
-  </div>
+    <div class="landing-content" style="padding: var(--space-sm) var(--space-md);">
+      <h1 class="animate-fade-in">AI Art Generation</h1>
+      <nav class="animate-fade-in" style="animation-delay: 0.2s;">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#portfolio-anchor-link">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main container">
+    <section class="glass-card hover-glow animate-fade-in" style="animation-delay: 0.4s; margin-top: -3rem; position: relative; z-index: 10;">
+      <p style="font-size: 1.1rem; margin-bottom: var(--space-xl); text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+        An example of an advanced technique in artificial image generation using Stable Diffusion v1.5 and the OpenPose ControlNet, running on a Python server with an A100 GPU on Google Colab.
+      </p>
+
+      <div class="projects-grid">
+        <div class="project-card hover-scale" style="background: var(--bg-surface-elevated); padding: var(--space-sm); border-radius: 12px; border: 1px solid var(--glass-border);">
+          <div class="project-image" style="height: 350px;">
+            <img src="assets/images/ai-art/original-model.jpg" alt="Source model for use with ControlNet in Stable Diffusion" style="object-fit: contain;">
+          </div>
+          <div class="project-content" style="text-align: center; margin-top: var(--space-xs);">
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Source model for ControlNet</p>
+          </div>
+        </div>
+
+        <div class="project-card hover-scale" style="background: var(--bg-surface-elevated); padding: var(--space-sm); border-radius: 12px; border: 1px solid var(--glass-border);">
+          <div class="project-image" style="height: 350px;">
+            <img src="assets/images/ai-art/controlnet-stick-figure.png" alt="Source model as a ControlNet in Stable Diffusion" style="object-fit: contain;">
+          </div>
+          <div class="project-content" style="text-align: center; margin-top: var(--space-xs);">
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">OpenPose ControlNet map</p>
+          </div>
+        </div>
+
+        <div class="project-card hover-scale" style="background: var(--bg-surface-elevated); padding: var(--space-sm); border-radius: 12px; border: 1px solid var(--glass-border);">
+          <div class="project-image" style="height: 350px;">
+            <img src="assets/images/ai-art/orignal-model-with-generated-female-model.png" alt="Generated female model" style="object-fit: contain;">
+          </div>
+          <div class="project-content" style="text-align: center; margin-top: var(--space-xs);">
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Generated Female Model</p>
+          </div>
+        </div>
+
+        <div class="project-card hover-scale" style="background: var(--bg-surface-elevated); padding: var(--space-sm); border-radius: 12px; border: 1px solid var(--glass-border);">
+          <div class="project-image" style="height: 350px;">
+            <img src="assets/images/ai-art/orignal-model-with-generated-male-model.png" alt="Generated male model" style="object-fit: contain;">
+          </div>
+          <div class="project-content" style="text-align: center; margin-top: var(--space-xs);">
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Generated Male Model</p>
+          </div>
+        </div>
+
+        <div class="project-card hover-scale" style="background: var(--bg-surface-elevated); padding: var(--space-sm); border-radius: 12px; border: 1px solid var(--glass-border);">
+          <div class="project-image" style="height: 350px;">
+            <img src="assets/images/ai-art/orignal-model-with-generated-gorilla-model.png" alt="Generated gorilla model" style="object-fit: contain;">
+          </div>
+          <div class="project-content" style="text-align: center; margin-top: var(--space-xs);">
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Generated Gorilla Model</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer class="footer">
-    <p>&#169; 2024</p>
+    <p><a href="index.html">Back to homepage</a></p>
+    <p>&#169; 2024 Firecracker Media</p>
   </footer>
 </body>
 </html>

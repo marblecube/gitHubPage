@@ -1,0 +1,43 @@
+/* tokens.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap');
+
+:root {
+  /* Dark Mode Palette */
+  --bg-base: #0f0f11;
+  --bg-surface: #1a1a1e;
+  --bg-surface-elevated: #27272c;
+
+  /* Firecracker Accents */
+  --accent-primary: #ff4500; /* Fiery Orange/Red */
+  --accent-primary-glow: rgba(255, 69, 0, 0.4);
+  --accent-secondary: #ff8c00;
+  --accent-tertiary: #ffd700;
+
+  /* Text Colors */
+  --text-primary: #f8f8f2;
+  --text-secondary: #a0a0a5;
+  --text-muted: #6b6b70;
+
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* Glassmorphism & Effects */
+  --glass-bg: rgba(26, 26, 30, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --glass-blur: blur(12px);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-out;
+  --transition-medium: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
