@@ -295,3 +295,11 @@ section {
   border-top: 1px solid var(--glass-border);
   color: var(--text-muted);
 }
+
+/* Legacy Writing Elements */
+#center_element {
+  text-align: center;
+  margin-bottom: var(--space-md);
+  margin-top: var(--space-sm);
+  color: var(--accent-primary);
+}
