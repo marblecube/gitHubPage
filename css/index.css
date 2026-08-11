@@ -301,7 +301,7 @@ section {
   text-align: center;
   margin-bottom: var(--space-md);
   margin-top: var(--space-sm);
-  color: var(--accent-primary);
+  color: var(--accent-tertiary);
 }
 
 /* Print-style Drop Cap */
