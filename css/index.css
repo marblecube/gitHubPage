@@ -315,3 +315,10 @@ section {
   padding-right: 8px;
   padding-left: 2px;
 }
+
+/* Center images in writing articles */
+.writing-inner img {
+  display: block;
+  margin: var(--space-md) auto;
+  max-width: 100%;
+}
