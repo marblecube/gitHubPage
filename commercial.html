@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commercial Services - Firecracker Media</title>
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="author" content="Vidal Palacios">
+  <style>
+    .form-group { margin-bottom: var(--space-md); }
+    .form-group label { display: block; margin-bottom: var(--space-xs); font-weight: bold; color: var(--text-primary); }
+    .form-control { width: 100%; padding: 12px; border: 1px solid var(--glass-border); border-radius: 8px; background: rgba(255, 255, 255, 0.05); color: var(--text-primary); font-family: inherit; }
+    .form-control:focus { outline: none; border-color: var(--accent-primary); background: rgba(255, 255, 255, 0.1); }
+
+    .submit-btn { display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); color: #fff; text-decoration: none; border-radius: 24px; font-weight: bold; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3); border: none; cursor: pointer; font-family: inherit; font-size: 1rem; }
+    .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(220, 38, 38, 0.5); }
+    .submit-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; box-shadow: none; }
+  </style>
+</head>
+<body>
+  <header class="header" style="height: 30vh; display: flex; align-items: center; justify-content: center; position: relative;">
+    <div class="landing-content" style="padding: var(--space-sm) var(--space-md); text-align: center; width: 100%;">
+      <h1 class="animate-fade-in" style="font-size: 2.5rem; margin-bottom: var(--space-md);">Commercial Services</h1>
+      <nav class="animate-fade-in" style="animation-delay: 0.2s;">
+        <ul class="nav-list" style="justify-content: center;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about-anchor-link">About</a></li>
+          <li><a href="index.html#projects-anchor-link">Projects</a></li>
+          <li><a href="index.html#portfolio-anchor-link">Portfolio</a></li>
+          <li><a href="index.html#commercial">Commercial Services</a></li>
+          <li><a href="index.html#socials-anchor-link">Socials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main container" style="max-width: 800px;">
+    <section class="glass-card hover-glow animate-fade-in" style="animation-delay: 0.4s; padding: var(--space-xl); margin-top: -3rem; position: relative; z-index: 10; margin-bottom: var(--space-xl);">
+      <p style="font-size: 1.1rem; margin-bottom: var(--space-xl); line-height: 1.6; text-align: center; color: var(--text-secondary);">
+        Please complete our initial intake form below to share details about your business and project scope. Once submitted, a consultation meeting offer and calendar invite link will be dispatched directly to your email.
+      </p>
+
+      <form id="intakeForm" style="display: flex; flex-direction: column;">
+        <!-- Honeypot field to catch spam bots -->
+        <input type="text" name="website_url" tabindex="-1" autocomplete="off" style="display:none !important; position:absolute; left:-9999px;">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="form-control" required placeholder="Your full name" autocomplete="off">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" required placeholder="you@example.com" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" class="form-control" required placeholder="(626) 555-0199" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label for="location">Meeting Location / Business Address</label>
+          <input type="text" id="location" name="location" class="form-control" required placeholder="123 Main St, Alhambra, CA" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label for="eventTitle">Project Focus</label>
+          <input type="text" id="eventTitle" name="eventTitle" class="form-control" required placeholder="e.g. Web Development, Video Production..." autocomplete="off">
+        </div>
+
+
+
+        <div id="formStatus" style="margin-top: var(--space-md); margin-bottom: var(--space-md); text-align: center; display: none; padding: 12px; border-radius: 8px; font-weight: bold;"></div>
+
+        <div style="text-align: center; margin-top: var(--space-lg);">
+          <button type="submit" id="submitBtn" class="submit-btn">Submit Intake</button>
+        </div>
+      </form>
+
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&#169; 2024 Firecracker Media</p>
+  </footer>
+
+  <script>
+    document.getElementById('intakeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const form = e.target;
+      const btn = document.getElementById('submitBtn');
+      const statusDiv = document.getElementById('formStatus');
+      
+      // Update UI to loading state
+      btn.disabled = true;
+      btn.textContent = 'Submitting...';
+      statusDiv.style.display = 'none';
+
+      // Create FormData
+      const formData = new FormData(form);
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzwvSD8si647JRdyDk-ddKsF6Pr86JofgOGVairxmqr3PiGnaXHKfeK9pn0el9nyL20/exec';
+
+      fetch(scriptURL, { 
+        method: 'POST', 
+        body: formData,
+        mode: 'no-cors' // Crucial for submitting to Google Scripts from client-side
+      })
+      .then(response => {
+        // Because of no-cors, we don't get a readable response back, but it succeeded if we reach here
+        statusDiv.style.display = 'block';
+        statusDiv.style.background = 'rgba(16, 185, 129, 0.2)';
+        statusDiv.style.color = '#10b981';
+        statusDiv.style.border = '1px solid #10b981';
+        statusDiv.textContent = 'Thank you! Your intake form has been submitted successfully.';
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        statusDiv.style.display = 'block';
+        statusDiv.style.background = 'rgba(239, 68, 68, 0.2)';
+        statusDiv.style.color = '#ef4444';
+        statusDiv.style.border = '1px solid #ef4444';
+        statusDiv.textContent = 'Something went wrong. Please try again later.';
+      })
+      .finally(() => {
+        btn.disabled = false;
+        btn.textContent = 'Submit Intake';
+      });
+    });
+  </script>
+</body>
+</html>
