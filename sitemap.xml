@@ -6,47 +6,52 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://firecrackermedia.co/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://firecrackermedia.co/commercial.html</loc>
+    <loc>https://firecrackermedia.co/commercial/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://firecrackermedia.co/ai-art.html</loc>
+    <loc>https://firecrackermedia.co/creative/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://firecrackermedia.co/creative/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://firecrackermedia.co/software.html</loc>
+    <loc>https://firecrackermedia.co/creative/ai-art.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://firecrackermedia.co/video.html</loc>
+    <loc>https://firecrackermedia.co/creative/software.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://firecrackermedia.co/writing.html</loc>
+    <loc>https://firecrackermedia.co/creative/video.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://firecrackermedia.co/writing/alan-bean-interview.html</loc>
+    <loc>https://firecrackermedia.co/creative/writing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://firecrackermedia.co/creative/writing/alan-bean-interview.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://firecrackermedia.co/writing/in-the-morning-there-will-be-seagulls.html</loc>
+    <loc>https://firecrackermedia.co/creative/writing/in-the-morning-there-will-be-seagulls.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://firecrackermedia.co/writing/what-is-love.html</loc>
+    <loc>https://firecrackermedia.co/creative/writing/what-is-love.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
