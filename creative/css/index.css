@@ -92,16 +92,19 @@ section {
   overflow: hidden;
 }
 
-body::after {
+.main {
+  position: relative;
+}
+
+.main::before {
   content: '';
   position: absolute;
-  top: 100vh;
-  left: 0;
-  width: 60vw;
-  height: 150vh;
-  max-width: 800px;
-  max-height: 1200px;
-  background-image: url("data:image/svg+xml,%3Csvg width='800' height='800' viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='fade' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ff3366' stop-opacity='0.4' /%3E%3Cstop offset='100%25' stop-color='%23ff3366' stop-opacity='0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23fade)' stroke-width='4'%3E%3Cpath d='M-200,0 Q-100,250 -250,500 T-50,800' /%3E%3Cpath d='M-140,0 Q-40,250 -190,500 T10,800' /%3E%3Cpath d='M-80,0 Q20,250 -130,500 T70,800' /%3E%3Cpath d='M-20,0 Q80,250 -70,500 T130,800' /%3E%3Cpath d='M40,0 Q140,250 -10,500 T190,800' /%3E%3Cpath d='M100,0 Q200,250 50,500 T250,800' /%3E%3Cpath d='M160,0 Q260,250 110,500 T310,800' /%3E%3Cpath d='M220,0 Q320,250 170,500 T370,800' /%3E%3Cpath d='M280,0 Q380,250 230,500 T430,800' /%3E%3Cpath d='M340,0 Q440,250 290,500 T490,800' /%3E%3Cpath d='M400,0 Q500,250 350,500 T550,800' /%3E%3Cpath d='M460,0 Q560,250 410,500 T610,800' /%3E%3Cpath d='M520,0 Q620,250 470,500 T670,800' /%3E%3Cpath d='M580,0 Q680,250 530,500 T730,800' /%3E%3Cpath d='M640,0 Q740,250 590,500 T790,800' /%3E%3Cpath d='M700,0 Q800,250 650,500 T850,800' /%3E%3Cpath d='M760,0 Q860,250 710,500 T910,800' /%3E%3Cpath d='M820,0 Q920,250 770,500 T970,800' /%3E%3Cpath d='M880,0 Q980,250 830,500 T1030,800' /%3E%3Cpath d='M940,0 Q1040,250 890,500 T1090,800' /%3E%3Cpath d='M1000,0 Q1100,250 950,500 T1150,800' /%3E%3Cpath d='M0,0 Q250,50 500,-20 T800,80' /%3E%3Cpath d='M0,60 Q250,110 500,40 T800,140' /%3E%3Cpath d='M0,120 Q250,170 500,100 T800,200' /%3E%3Cpath d='M0,180 Q250,230 500,160 T800,260' /%3E%3Cpath d='M0,240 Q250,290 500,220 T800,320' /%3E%3Cpath d='M0,300 Q250,350 500,280 T800,380' /%3E%3Cpath d='M0,360 Q250,410 500,340 T800,440' /%3E%3Cpath d='M0,420 Q250,470 500,400 T800,500' /%3E%3Cpath d='M0,480 Q250,530 500,460 T800,560' /%3E%3Cpath d='M0,540 Q250,590 500,520 T800,620' /%3E%3Cpath d='M0,600 Q250,650 500,580 T800,680' /%3E%3Cpath d='M0,660 Q250,710 500,640 T800,740' /%3E%3Cpath d='M0,720 Q250,770 500,700 T800,800' /%3E%3Cpath d='M0,780 Q250,830 500,760 T800,860' /%3E%3C/g%3E%3C/svg%3E");
+  top: 0;
+  left: 50%;
+  transform: translateX(-50vw);
+  width: 400px;
+  height: 1000px;
+  background-image: url("data:image/svg+xml,%3Csvg width='400' height='1000' viewBox='0 0 400 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='fade' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ff3366' stop-opacity='0.4' /%3E%3Cstop offset='100%25' stop-color='%23ff3366' stop-opacity='0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23fade)' stroke-width='4'%3E%3Cpath d='M-200,0 Q-100,300 -250,600 T-50,1000' /%3E%3Cpath d='M-140,0 Q-40,300 -190,600 T10,1000' /%3E%3Cpath d='M-80,0 Q20,300 -130,600 T70,1000' /%3E%3Cpath d='M-20,0 Q80,300 -70,600 T130,1000' /%3E%3Cpath d='M40,0 Q140,300 -10,600 T190,1000' /%3E%3Cpath d='M100,0 Q200,300 50,600 T250,1000' /%3E%3Cpath d='M160,0 Q260,300 110,600 T310,1000' /%3E%3Cpath d='M220,0 Q320,300 170,600 T370,1000' /%3E%3Cpath d='M280,0 Q380,300 230,600 T430,1000' /%3E%3Cpath d='M340,0 Q440,300 290,600 T490,1000' /%3E%3Cpath d='M400,0 Q500,300 350,600 T550,1000' /%3E%3Cpath d='M460,0 Q560,300 410,600 T610,1000' /%3E%3Cpath d='M520,0 Q620,300 470,600 T670,1000' /%3E%3Cpath d='M580,0 Q680,300 530,600 T730,1000' /%3E%3Cpath d='M0,0 Q120,50 240,-20 T400,80' /%3E%3Cpath d='M0,60 Q120,110 240,40 T400,140' /%3E%3Cpath d='M0,120 Q120,170 240,100 T400,200' /%3E%3Cpath d='M0,180 Q120,230 240,160 T400,260' /%3E%3Cpath d='M0,240 Q120,290 240,220 T400,320' /%3E%3Cpath d='M0,300 Q120,350 240,280 T400,380' /%3E%3Cpath d='M0,360 Q120,410 240,340 T400,440' /%3E%3Cpath d='M0,420 Q120,470 240,400 T400,500' /%3E%3Cpath d='M0,480 Q120,530 240,460 T400,560' /%3E%3Cpath d='M0,540 Q120,590 240,520 T400,620' /%3E%3Cpath d='M0,600 Q120,650 240,580 T400,680' /%3E%3Cpath d='M0,660 Q120,710 240,640 T400,740' /%3E%3Cpath d='M0,720 Q120,770 240,700 T400,800' /%3E%3Cpath d='M0,780 Q120,830 240,760 T400,860' /%3E%3Cpath d='M0,840 Q120,890 240,820 T400,920' /%3E%3Cpath d='M0,900 Q120,950 240,880 T400,980' /%3E%3Cpath d='M0,960 Q120,1010 240,940 T400,1040' /%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: top left;
   z-index: -1;
