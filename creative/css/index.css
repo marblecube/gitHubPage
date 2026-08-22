@@ -88,23 +88,23 @@ section {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.main {
+  position: relative;
 }
 
-.header::before {
+.main::before {
   content: '';
   position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 50vw;
-  height: 50vw;
-  max-width: 600px;
-  max-height: 600px;
-  background-image: url("data:image/svg+xml,%3Csvg width='800' height='800' viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.5' opacity='0.15'%3E%3Cpath d='M-100,100 Q100,120 200,80 T400,150 T600,100 T900,120' /%3E%3Cpath d='M-100,150 Q120,170 220,130 T420,200 T620,150 T900,170' /%3E%3Cpath d='M-100,200 Q140,220 240,180 T440,250 T640,200 T900,220' /%3E%3Cpath d='M-100,250 Q160,270 260,230 T460,300 T660,250 T900,270' /%3E%3Cpath d='M-100,300 Q180,320 280,280 T480,350 T680,300 T900,320' /%3E%3Cpath d='M-100,350 Q200,370 300,330 T500,400 T700,350 T900,370' /%3E%3Cpath d='M-100,400 Q220,420 320,380 T520,450 T720,400 T900,420' /%3E%3Cpath d='M-100,450 Q240,470 340,430 T540,500 T740,450 T900,470' /%3E%3Cpath d='M-100,500 Q260,520 360,480 T560,550 T760,500 T900,520' /%3E%3C/g%3E%3C/svg%3E");
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 60vw;
+  max-width: 800px;
+  max-height: 800px;
+  background-image: url("data:image/svg+xml,%3Csvg width='800' height='800' viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ff3366' stroke-width='2' opacity='0.25'%3E%3Cpath d='M-100,50 Q100,70 200,30 T400,100 T600,50 T900,70' /%3E%3Cpath d='M-100,80 Q110,100 210,60 T410,130 T610,80 T900,100' /%3E%3Cpath d='M-100,110 Q120,130 220,90 T420,160 T620,110 T900,130' /%3E%3Cpath d='M-100,140 Q130,160 230,120 T430,190 T630,140 T900,160' /%3E%3Cpath d='M-100,170 Q140,190 240,150 T440,220 T640,170 T900,190' /%3E%3Cpath d='M-100,200 Q150,220 250,180 T450,250 T650,200 T900,220' /%3E%3Cpath d='M-100,230 Q160,250 260,210 T460,280 T660,230 T900,250' /%3E%3Cpath d='M-100,260 Q170,290 270,240 T470,310 T670,260 T900,280' /%3E%3Cpath d='M-100,290 Q180,320 280,270 T480,340 T680,290 T900,310' /%3E%3Cpath d='M-100,320 Q190,350 290,300 T490,370 T690,320 T900,340' /%3E%3Cpath d='M-100,350 Q200,380 300,330 T500,400 T700,350 T900,370' /%3E%3Cpath d='M-100,380 Q210,410 310,360 T510,430 T710,380 T900,400' /%3E%3Cpath d='M-100,410 Q220,440 320,390 T520,460 T720,410 T900,430' /%3E%3Cpath d='M-100,440 Q230,470 330,420 T530,490 T730,440 T900,460' /%3E%3Cpath d='M-100,470 Q240,500 340,450 T540,520 T740,470 T900,490' /%3E%3Cpath d='M-100,500 Q250,530 350,480 T550,550 T750,500 T900,520' /%3E%3Cpath d='M-100,530 Q260,560 360,510 T560,580 T760,530 T900,550' /%3E%3Cpath d='M-100,560 Q270,590 370,540 T570,610 T770,560 T900,580' /%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: top left;
-  z-index: 1;
+  z-index: -1;
   pointer-events: none;
 }
 
