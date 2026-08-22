@@ -92,20 +92,16 @@ section {
   overflow: hidden;
 }
 
-.main {
-  position: relative;
-}
-
-.main::before {
+body::after {
   content: '';
   position: absolute;
-  top: 0;
+  top: 100vh;
   left: 0;
   width: 60vw;
-  height: 60vw;
+  height: 150vh;
   max-width: 800px;
-  max-height: 800px;
-  background-image: url("data:image/svg+xml,%3Csvg width='800' height='800' viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ff3366' stroke-width='2' opacity='0.25'%3E%3Cpath d='M-100,50 Q100,70 200,30 T400,100 T600,50 T900,70' /%3E%3Cpath d='M-100,80 Q110,100 210,60 T410,130 T610,80 T900,100' /%3E%3Cpath d='M-100,110 Q120,130 220,90 T420,160 T620,110 T900,130' /%3E%3Cpath d='M-100,140 Q130,160 230,120 T430,190 T630,140 T900,160' /%3E%3Cpath d='M-100,170 Q140,190 240,150 T440,220 T640,170 T900,190' /%3E%3Cpath d='M-100,200 Q150,220 250,180 T450,250 T650,200 T900,220' /%3E%3Cpath d='M-100,230 Q160,250 260,210 T460,280 T660,230 T900,250' /%3E%3Cpath d='M-100,260 Q170,290 270,240 T470,310 T670,260 T900,280' /%3E%3Cpath d='M-100,290 Q180,320 280,270 T480,340 T680,290 T900,310' /%3E%3Cpath d='M-100,320 Q190,350 290,300 T490,370 T690,320 T900,340' /%3E%3Cpath d='M-100,350 Q200,380 300,330 T500,400 T700,350 T900,370' /%3E%3Cpath d='M-100,380 Q210,410 310,360 T510,430 T710,380 T900,400' /%3E%3Cpath d='M-100,410 Q220,440 320,390 T520,460 T720,410 T900,430' /%3E%3Cpath d='M-100,440 Q230,470 330,420 T530,490 T730,440 T900,460' /%3E%3Cpath d='M-100,470 Q240,500 340,450 T540,520 T740,470 T900,490' /%3E%3Cpath d='M-100,500 Q250,530 350,480 T550,550 T750,500 T900,520' /%3E%3Cpath d='M-100,530 Q260,560 360,510 T560,580 T760,530 T900,550' /%3E%3Cpath d='M-100,560 Q270,590 370,540 T570,610 T770,560 T900,580' /%3E%3C/g%3E%3C/svg%3E");
+  max-height: 1200px;
+  background-image: url("data:image/svg+xml,%3Csvg width='800' height='800' viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='fade' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ff3366' stop-opacity='0.4' /%3E%3Cstop offset='100%25' stop-color='%23ff3366' stop-opacity='0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23fade)' stroke-width='4'%3E%3Cpath d='M-200,0 Q-100,250 -250,500 T-50,800' /%3E%3Cpath d='M-140,0 Q-40,250 -190,500 T10,800' /%3E%3Cpath d='M-80,0 Q20,250 -130,500 T70,800' /%3E%3Cpath d='M-20,0 Q80,250 -70,500 T130,800' /%3E%3Cpath d='M40,0 Q140,250 -10,500 T190,800' /%3E%3Cpath d='M100,0 Q200,250 50,500 T250,800' /%3E%3Cpath d='M160,0 Q260,250 110,500 T310,800' /%3E%3Cpath d='M220,0 Q320,250 170,500 T370,800' /%3E%3Cpath d='M280,0 Q380,250 230,500 T430,800' /%3E%3Cpath d='M340,0 Q440,250 290,500 T490,800' /%3E%3Cpath d='M400,0 Q500,250 350,500 T550,800' /%3E%3Cpath d='M460,0 Q560,250 410,500 T610,800' /%3E%3Cpath d='M520,0 Q620,250 470,500 T670,800' /%3E%3Cpath d='M580,0 Q680,250 530,500 T730,800' /%3E%3Cpath d='M640,0 Q740,250 590,500 T790,800' /%3E%3Cpath d='M700,0 Q800,250 650,500 T850,800' /%3E%3Cpath d='M760,0 Q860,250 710,500 T910,800' /%3E%3Cpath d='M820,0 Q920,250 770,500 T970,800' /%3E%3Cpath d='M880,0 Q980,250 830,500 T1030,800' /%3E%3Cpath d='M940,0 Q1040,250 890,500 T1090,800' /%3E%3Cpath d='M1000,0 Q1100,250 950,500 T1150,800' /%3E%3Cpath d='M0,0 Q250,50 500,-20 T800,80' /%3E%3Cpath d='M0,60 Q250,110 500,40 T800,140' /%3E%3Cpath d='M0,120 Q250,170 500,100 T800,200' /%3E%3Cpath d='M0,180 Q250,230 500,160 T800,260' /%3E%3Cpath d='M0,240 Q250,290 500,220 T800,320' /%3E%3Cpath d='M0,300 Q250,350 500,280 T800,380' /%3E%3Cpath d='M0,360 Q250,410 500,340 T800,440' /%3E%3Cpath d='M0,420 Q250,470 500,400 T800,500' /%3E%3Cpath d='M0,480 Q250,530 500,460 T800,560' /%3E%3Cpath d='M0,540 Q250,590 500,520 T800,620' /%3E%3Cpath d='M0,600 Q250,650 500,580 T800,680' /%3E%3Cpath d='M0,660 Q250,710 500,640 T800,740' /%3E%3Cpath d='M0,720 Q250,770 500,700 T800,800' /%3E%3Cpath d='M0,780 Q250,830 500,760 T800,860' /%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: top left;
   z-index: -1;
