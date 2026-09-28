@@ -1,0 +1,35 @@
+/* commercial.css — light theme overrides shared by the commercial pages */
+
+:root {
+  --bg-base: #ffffff;
+  --bg-surface: #f7f7fa;
+  --bg-surface-elevated: #ececee;
+  --text-primary: #111111;
+  --text-secondary: #444444;
+  --text-muted: #6b6b6b; /* was #888 (3.5:1) — now 5.3:1 on white */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+
+  /* The dark-theme accents are too light on white (#ff8c00 is 2.3:1, #ffd700 is 1.4:1).
+     Same hues, deepened to pass WCAG AA for text and for white-on-orange buttons. */
+  --accent-primary: #d93a00;
+  --accent-primary-glow: rgba(217, 58, 0, 0.3);
+  --accent-secondary: #c2410c;
+  --accent-tertiary: #c2410c;
+}
+
+.form-group { margin-bottom: var(--space-md); }
+.form-group label { display: block; margin-bottom: var(--space-xs); font-weight: bold; color: var(--text-primary); }
+.form-control { width: 100%; padding: 12px; border: 1px solid var(--glass-border); border-radius: 8px; background: rgba(0, 0, 0, 0.03); color: var(--text-primary); font-family: inherit; font-size: 1rem; transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast); }
+.form-control::placeholder { color: var(--text-muted); }
+.form-control:focus { outline: none; border-color: var(--accent-primary); background: #fff; box-shadow: 0 0 0 3px var(--accent-primary-glow); }
+.submit-btn { display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); color: #fff; text-decoration: none; border-radius: 24px; font-weight: bold; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px var(--accent-primary-glow); border: none; cursor: pointer; font-family: inherit; font-size: 1rem; }
+.submit-btn:hover { color: #fff; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(217, 58, 0, 0.45); }
+.submit-btn:active { transform: translateY(0) scale(0.98); box-shadow: 0 2px 8px var(--accent-primary-glow); }
+.submit-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; box-shadow: none; }
+
+.form-status { margin: var(--space-md) 0; padding: 12px; border-radius: 8px; text-align: center; font-weight: bold; border: 1px solid; }
+.form-status.is-success { background: rgba(16, 185, 129, 0.12); color: #047857; border-color: #10b981; }
+.form-status.is-error { background: rgba(239, 68, 68, 0.1); color: #b91c1c; border-color: #ef4444; }
+.form-status a { color: inherit; text-decoration: underline; }

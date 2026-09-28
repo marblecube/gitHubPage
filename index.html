@@ -18,6 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&family=Outfit:wght@700&display=swap" rel="stylesheet">
     <script type="module" src="./assets/index-p7jTMYfr.js"></script>
     <link rel="stylesheet" href="./assets/index-r6XCMlKJ.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+      /* Buttons are now links (middle-click, right-click, keyboard work); keep the pill look */
+      .btn { display: inline-block; text-decoration: none; text-align: center; }
+      .btn:active { transform: translateY(0) scale(0.97); }
+      .btn:focus-visible { outline: 2px solid #f93; outline-offset: 4px; }
+      @media (prefers-reduced-motion: reduce) {
+        .content-wrapper, .content-wrapper:hover, .btn { transition: none; transform: none; }
+      }
+    </style>
   </head>
   <body>
     <canvas id="bg"></canvas>
@@ -28,8 +38,8 @@
         <h1 class="title">FIRECRACKER <span>MEDIA</span></h1>
         
         <div class="button-group">
-          <button class="btn btn-commercial" onclick="window.location.href='commercial/index.html'">Commercial</button>
-          <button class="btn btn-creative" onclick="window.location.href='creative/index.html'">Creative</button>
+          <a class="btn btn-commercial" href="commercial/index.html">Commercial</a>
+          <a class="btn btn-creative" href="creative/index.html">Creative</a>
         </div>
       </div>
     </div>

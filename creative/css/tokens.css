@@ -17,7 +17,7 @@
   /* Text Colors */
   --text-primary: #f8f8f2;
   --text-secondary: #a0a0a5;
-  --text-muted: #6b6b70;
+  --text-muted: #8a8a90; /* was #6b6b70 (3.7:1) — now ~5.5:1 on --bg-base for AA */
 
   /* Typography */
   --font-sans: 'Inter', sans-serif;
@@ -30,6 +30,16 @@
   --space-lg: 4rem;
   --space-xl: 8rem;
 
+  /* Type Scale (~1.25 major third) */
+  --text-sm: 0.875rem;
+  --text-lg: 1.125rem;
+  --text-h4: 1.25rem;
+  --text-h3: 1.5rem;
+  --text-h2: clamp(2rem, 4vw, 2.5rem);
+
+  /* Focus */
+  --focus-ring: 0 0 0 3px var(--bg-base), 0 0 0 5px var(--accent-secondary);
+
   /* Glassmorphism & Effects */
   --glass-bg: rgba(26, 26, 30, 0.6);
   --glass-border: rgba(255, 255, 255, 0.05);
@@ -40,4 +50,12 @@
   --transition-fast: 0.15s ease-out;
   --transition-medium: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 768px) {
+  :root {
+    /* 8rem section padding + 8rem title margin stacked into ~16rem gaps on phones */
+    --space-lg: 3rem;
+    --space-xl: 5rem;
+  }
 }

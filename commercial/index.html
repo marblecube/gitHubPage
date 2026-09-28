@@ -35,28 +35,8 @@
   </script>
 
   <link rel="stylesheet" href="../creative/css/index.css">
-  <style>
-    :root {
-      --bg-base: #ffffff;
-      --bg-surface: #f7f7fa;
-      --bg-surface-elevated: #ececee;
-      --text-primary: #111111;
-      --text-secondary: #444444;
-      --text-muted: #888888;
-      --glass-bg: rgba(255, 255, 255, 0.7);
-      --glass-border: rgba(0, 0, 0, 0.1);
-      --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
-    }
-    
-    .form-group { margin-bottom: var(--space-md); }
-    .form-group label { display: block; margin-bottom: var(--space-xs); font-weight: bold; color: var(--text-primary); }
-    .form-control { width: 100%; padding: 12px; border: 1px solid var(--glass-border); border-radius: 8px; background: rgba(0, 0, 0, 0.03); color: var(--text-primary); font-family: inherit; }
-    .form-control:focus { outline: none; border-color: var(--accent-primary); background: rgba(0, 0, 0, 0.06); }
-    .submit-btn { display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); color: #fff; text-decoration: none; border-radius: 24px; font-weight: bold; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3); border: none; cursor: pointer; font-family: inherit; font-size: 1rem; }
-    .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(220, 38, 38, 0.5); }
-    .submit-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; box-shadow: none; }
-  </style>
-  <link rel="icon" type="image/png" href="../creative/assets/firecracker_static.png">
+  <link rel="stylesheet" href="css/commercial.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 </head>
 <body>
   <!-- Header with landing video and navigation -->
@@ -114,7 +94,7 @@
       
       <!-- Short Blurb -->
       <h2 class="section-title">Partner With Us</h2>
-      <div class="glass-card hover-glow" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <div class="glass-card" style="text-align: center; max-width: 800px; margin: 0 auto;">
         <img src="../creative/assets/images/projects_home/community_outreach_projects.png" alt="Montage of various community outreach and education projects" style="width: 100%; border-radius: 8px; margin-bottom: var(--space-md);">
         <p style="font-size: 1.1rem; line-height: 1.6;">
           Our commercial division focuses on delivering high-impact, conversion-driven solutions for modern brands. Whether you need a visually stunning web platform, precision-targeted digital advertising campaigns, or state-of-the-art video production powered by the latest in applied AI, we blend artistic excellence with technical expertise to scale your business.
@@ -125,7 +105,7 @@
     <!-- Demos and Case Studies Link Section -->
     <section id="demos-anchor" class="animate-fade-in" style="animation-delay: 0.5s; margin-bottom: var(--space-xl); padding: 0;">
       <h2 class="section-title" style="margin-top: 0;">Demos & Case Studies</h2>
-      <div class="glass-card hover-glow" style="text-align: center; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: var(--space-xl) var(--space-md);">
+      <div class="glass-card" style="text-align: center; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: var(--space-xl) var(--space-md);">
         <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: var(--space-lg);">
           Explore our portfolio of past commercial work, from high-concept video advertising spots to digital strategy case studies.
         </p>
@@ -136,13 +116,13 @@
     <!-- Intake Form Section -->
     <section id="intake-anchor" class="animate-fade-in" style="animation-delay: 0.6s; margin-bottom: var(--space-xl); padding: 0;">
       <h2 class="section-title" style="margin-top: 0;">Start an Intake</h2>
-      <div class="glass-card hover-glow" style="max-width: 800px; margin: 0 auto;">
+      <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
       <p style="font-size: 1.1rem; margin-bottom: var(--space-xl); line-height: 1.6; text-align: center; color: var(--text-secondary);">
         Please complete our initial intake form below to share details about your business and project scope. Once submitted, a consultation meeting offer and calendar invite link will be dispatched directly to your email.
       </p>
 
       <form id="intakeForm" style="display: flex; flex-direction: column;">
-        <input type="text" name="website_url" tabindex="-1" autocomplete="off" style="display:none !important; position:absolute; left:-9999px;">
+        <input type="text" name="website_url" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important; position:absolute; left:-9999px;">
 
         <div class="form-group">
           <label for="name">Name</label>
@@ -169,7 +149,7 @@
           <input type="text" id="eventTitle" name="eventTitle" class="form-control" required maxlength="250" placeholder="e.g. Web Development, Video Production..." autocomplete="off">
         </div>
 
-        <div id="formStatus" style="margin-top: var(--space-md); margin-bottom: var(--space-md); text-align: center; display: none; padding: 12px; border-radius: 8px; font-weight: bold;"></div>
+        <div id="formStatus" class="form-status" role="status" aria-live="polite" hidden></div>
 
         <div style="text-align: center; margin-top: var(--space-lg);">
           <button type="submit" id="submitBtn" class="submit-btn">Submit Intake</button>
@@ -186,64 +166,71 @@
   </footer>
 
   <script>
-    document.getElementById('intakeForm').addEventListener('submit', function(e) {
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzwvSD8si647JRdyDk-ddKsF6Pr86JofgOGVairxmqr3PiGnaXHKfeK9pn0el9nyL20/exec';
+    const CONTACT_EMAIL = 'vidal.palacios@firecrackermedia.co';
+    const TIMEOUT_MS = 20000;
+
+    const form = document.getElementById('intakeForm');
+    const btn = document.getElementById('submitBtn');
+    const statusDiv = document.getElementById('formStatus');
+
+    function showStatus(type, message) {
+      statusDiv.hidden = false;
+      statusDiv.className = 'form-status is-' + type;
+      statusDiv.innerHTML = message;
+    }
+
+    const SUCCESS_MSG = 'Thank you! Your intake form has been submitted. Watch your inbox for a consultation invite.';
+    const FAILURE_MSG = 'We couldn’t confirm your submission, so it may not have gone through. Please try again, or email us at <a href="mailto:' + CONTACT_EMAIL + '">' + CONTACT_EMAIL + '</a>.';
+
+    form.addEventListener('submit', async function(e) {
       e.preventDefault();
-      
-      const form = e.target;
-      const btn = document.getElementById('submitBtn');
-      const statusDiv = document.getElementById('formStatus');
-      
-      // Honeypot check: If the hidden field is filled, it's a bot.
+
+      // Honeypot check: if the hidden field is filled it's a bot — fake a success and stop.
       if (form.website_url.value) {
-        // Silently abort but show success to trick the bot
-        statusDiv.style.display = 'block';
-        statusDiv.style.background = 'rgba(16, 185, 129, 0.2)';
-        statusDiv.style.color = '#10b981';
-        statusDiv.style.border = '1px solid #10b981';
-        statusDiv.textContent = 'Thank you! Your intake form has been submitted successfully.';
+        showStatus('success', SUCCESS_MSG);
         form.reset();
         return;
       }
-      
-      // Update UI to loading state
+
       btn.disabled = true;
       btn.textContent = 'Submitting...';
-      statusDiv.style.display = 'none';
+      statusDiv.hidden = true;
 
-      // Gather and sanitize data
+      // Gather and sanitize data (strip HTML tags)
       const formData = new FormData();
       for (const [key, value] of new FormData(form).entries()) {
-        // Basic sanitization: strip HTML tags
-        const sanitizedValue = typeof value === 'string' ? value.replace(/(<([^>]+)>)/gi, "") : value;
-        formData.append(key, sanitizedValue);
+        formData.append(key, typeof value === 'string' ? value.replace(/(<([^>]+)>)/gi, '') : value);
       }
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzwvSD8si647JRdyDk-ddKsF6Pr86JofgOGVairxmqr3PiGnaXHKfeK9pn0el9nyL20/exec';
 
-      fetch(scriptURL, { 
-        method: 'POST', 
-        body: formData,
-        mode: 'no-cors' 
-      })
-      .then(response => {
-        statusDiv.style.display = 'block';
-        statusDiv.style.background = 'rgba(16, 185, 129, 0.2)';
-        statusDiv.style.color = '#10b981';
-        statusDiv.style.border = '1px solid #10b981';
-        statusDiv.textContent = 'Thank you! Your intake form has been submitted successfully.';
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
+
+      try {
+        // A normal (CORS) request, so we can actually read the response.
+        // The old 'no-cors' mode made every request look successful, even failed ones.
+        const response = await fetch(SCRIPT_URL, { method: 'POST', body: formData, signal: controller.signal });
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+
+        // If the script replies with JSON, honour an explicit error flag.
+        const text = await response.text();
+        let result = null;
+        try { result = JSON.parse(text); } catch (_) { /* non-JSON reply: a 2xx is treated as success */ }
+        if (result && (result.result === 'error' || result.status === 'error' || result.success === false)) {
+          throw new Error(result.error || result.message || 'Script reported an error');
+        }
+
+        showStatus('success', SUCCESS_MSG);
         form.reset();
-      })
-      .catch(error => {
-        console.error('Error!', error.message);
-        statusDiv.style.display = 'block';
-        statusDiv.style.background = 'rgba(239, 68, 68, 0.2)';
-        statusDiv.style.color = '#ef4444';
-        statusDiv.style.border = '1px solid #ef4444';
-        statusDiv.textContent = 'Something went wrong. Please try again later.';
-      })
-      .finally(() => {
+      } catch (error) {
+        console.error('Intake submission failed:', error);
+        // Keep what they typed so they can retry without re-entering it.
+        showStatus('error', FAILURE_MSG);
+      } finally {
+        clearTimeout(timer);
         btn.disabled = false;
         btn.textContent = 'Submit Intake';
-      });
+      }
     });
   </script>
 </body>

@@ -19,16 +19,32 @@
   transition: all var(--transition-medium);
 }
 
-.hover-glow:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px var(--accent-primary-glow);
-  border-color: var(--accent-primary);
+/* Hover lifts only on devices with a real pointer, so taps don't leave cards stuck "hovered" */
+@media (hover: hover) {
+  .hover-glow:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px var(--accent-primary-glow);
+    border-color: var(--accent-primary);
+  }
 }
 
 .hover-scale {
   transition: transform var(--transition-medium);
 }
 
-.hover-scale:hover {
-  transform: scale(1.02);
+@media (hover: hover) {
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
